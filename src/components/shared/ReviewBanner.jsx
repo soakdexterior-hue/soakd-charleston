@@ -8,7 +8,7 @@ export default function ReviewBanner() {
       href={GOOGLE_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-center gap-2 bg-primary hover:bg-secondary transition-colors duration-200 px-4 py-2 text-white no-underline"
+      className="flex items-center justify-center gap-2 bg-primary hover:bg-secondary transition-colors duration-200 px-4 py-2 text-white no-underline w-full"
       style={{ minHeight: '36px' }}
     >
       <span className="text-yellow-400 text-base leading-none">★★★★★</span>

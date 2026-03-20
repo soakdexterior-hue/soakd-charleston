@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CTASection({
   title = "Ready for Crystal Clear Results?",
-  subtitle = "Get Your Free Quote Today",
+  subtitle = "Get your free quote today — we respond within 1 hour guaranteed!",
   description = "Join over 70 satisfied homeowners across the Charleston area. Fast response, guaranteed results.",
 }) {
   return (
@@ -22,7 +22,7 @@ export default function CTASection({
           <a href="tel:843-826-6708">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold px-8 w-full sm:w-auto">
               <Phone className="w-4 h-4 mr-2" />
-              Call 843-826-6708
+              Call or Text 843-826-6708
             </Button>
           </a>
           <Link to="/contact">

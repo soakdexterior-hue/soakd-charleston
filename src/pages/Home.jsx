@@ -50,37 +50,37 @@ const SERVICES = [
   {
     icon: Sparkles,
     title: 'Window Cleaning',
-    description: 'Crystal clear windows inside and out. We leave every pane sparkling so you can enjoy the Lowcountry views your home deserves.',
+    description: 'Your windows are the eyes of your home. We clean every pane inside and out, removing hard water stains, salt deposits, and pollen buildup. Backed by our Clean Window Guarantee.',
     path: '/window-cleaning',
     image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/cb3a1e018_generated_67b0b0b3.png',
   },
   {
     icon: Zap,
     title: 'Pressure Washing',
-    description: 'Blast away years of dirt, grime, and mildew from driveways, sidewalks, patios, and more. Your home will look brand new.',
+    description: 'Driveways, sidewalks, patios, and pool decks — we blast away years of grime, algae, and staining with professional grade equipment. Your hardscapes will look brand new.',
     path: '/pressure-washing',
     image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/db442dc11_generated_01ad29cc.png',
   },
   {
     icon: ShieldCheck,
     title: 'Soft Washing',
-    description: 'Gentle yet powerful cleaning for siding, roofs, and delicate surfaces. Perfect for Charleston\'s historic and coastal homes.',
+    description: 'Gentle on your home, tough on dirt. Our soft washing service safely removes algae, mildew, and organic staining from your siding, roof, and delicate surfaces without damage.',
     path: '/soft-washing',
     image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png',
   },
   {
     icon: Award,
     title: 'Gutter Cleaning',
-    description: 'Keep your gutters clear and flowing. We remove all debris to protect your home from water damage year-round.',
+    description: 'Clogged gutters cause serious damage to your home\'s foundation and roof. We clear every blockage and flush your gutters clean so water flows freely.',
     path: '/gutter-cleaning',
     image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/f83ec5140_generated_9c30a3c3.png',
   },
 ];
 
 const REVIEWS = [
-  { name: 'Sarah M.', date: 'February 2026', text: 'Soakd did an incredible job on our windows. They were fast, professional, and our windows have never looked better. Highly recommend to anyone in Mount Pleasant!' },
-  { name: 'James R.', date: 'January 2026', text: 'Called Soakd for pressure washing our driveway and patio. The difference is night and day. They showed up on time and the results speak for themselves. Great local company.' },
-  { name: 'Lisa T.', date: 'December 2025', text: 'We\'ve tried other cleaning companies in Charleston but Soakd is by far the best. Their Clean Window Guarantee is legit — they came back and touched up one spot no questions asked.' },
+  { name: 'Terry Jarocki', date: 'Google Review', text: 'Very professional, friendly, and thorough. I highly recommend this company. The team is hardworking and honest. My windows have never looked better!' },
+  { name: 'Dennis Brooks', date: 'Google Review', text: 'Best results of any outside window cleaning EVER and I have lived here 26 years. Professional, prompt and would never use another company. By the way my home is 3 stories.' },
+  { name: 'Ted Skinner', date: 'Google Review', text: 'These guys are amazing and did a great job with my home. My neighbor liked the clean house and driveway so much she also had a great experience. Stop procrastinating and give them a call.' },
 ];
 
 const WHY_US = [
@@ -155,7 +155,7 @@ export default function Home() {
             <span className="text-secondary font-semibold text-sm tracking-widest uppercase">What We Do</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3">Our Professional Services</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              From sparkling windows to spotless driveways, we keep your Charleston home looking its absolute best.
+              From sparkling clean windows to a spotless driveway, Soakd handles it all. We use the right technique for every surface — protecting your home while delivering results that wow your neighbors.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -201,7 +201,10 @@ export default function Home() {
               <ReviewCard key={r.name} {...r} />
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 space-y-4">
+            <a href="https://www.google.com/maps/place/Soakd+Window+Cleaning" target="_blank" rel="noopener noreferrer" className="block text-secondary font-semibold hover:underline">
+              70+ Five Star Reviews from Lowcountry Homeowners →
+            </a>
             <Link to="/reviews">
               <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8">
                 See All Reviews
@@ -217,7 +220,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <span className="text-secondary font-semibold text-sm tracking-widest uppercase">Coverage</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3">Areas We Serve</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3">Proudly Serving the Lowcountry</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
               Proudly serving homeowners across the Charleston, SC metro area and surrounding Lowcountry communities.
             </p>

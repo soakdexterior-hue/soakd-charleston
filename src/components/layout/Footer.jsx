@@ -25,8 +25,11 @@ export default function Footer() {
             <Link to="/" className="flex items-center mb-4">
               <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f9ff51873_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-16 w-auto object-contain rounded-xl" />
             </Link>
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
-              The Lowcountry's most trusted window and exterior cleaning company. Serving Charleston and surrounding areas.
+            <p className="text-white/70 text-sm leading-relaxed mb-2">
+              Proudly serving the Lowcountry one spotless window at a time 🪟
+            </p>
+            <p className="text-white/60 text-xs leading-relaxed mb-6">
+              soakdcharleston.com
             </p>
             <div className="flex items-center gap-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors">
@@ -94,7 +97,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} Soakd Window Cleaning. All rights reserved.
+            © 2026 Soakd Window Cleaning. All Rights Reserved.
           </p>
           <div className="flex items-center gap-6 text-white/50 text-sm">
             <Link to="/about" className="hover:text-white/80 transition-colors">About</Link>

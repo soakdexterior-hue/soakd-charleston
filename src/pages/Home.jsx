@@ -99,6 +99,12 @@ const AREAS = [
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Window Cleaning & Pressure Washing Charleston SC | Soakd"
+        description="Soakd Window Cleaning offers professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC and the Lowcountry. 70+ five-star reviews. Call 843-826-6708!"
+        canonical="/"
+        schema={HOME_SCHEMA}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">

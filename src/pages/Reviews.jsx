@@ -24,6 +24,11 @@ const ALL_REVIEWS = [
 export default function Reviews() {
   return (
     <>
+      <SEO
+        title="Customer Reviews | Soakd Window Cleaning Charleston SC"
+        description="Read 70+ five-star reviews from homeowners across Charleston, Summerville, Mount Pleasant and the Lowcountry. See why Soakd is the most trusted exterior cleaning company in Charleston SC."
+        canonical="/reviews"
+      />
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">

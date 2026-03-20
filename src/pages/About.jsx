@@ -14,6 +14,11 @@ const VALUES = [
 export default function About() {
   return (
     <>
+      <SEO
+        title="About Soakd Window Cleaning | Serving the Lowcountry"
+        description="Locally owned and operated in Charleston SC for 2 years. Soakd Window Cleaning is built on trust, fast response, and a Clean Window Guarantee. Meet your Lowcountry cleaning team."
+        canonical="/about"
+      />
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">

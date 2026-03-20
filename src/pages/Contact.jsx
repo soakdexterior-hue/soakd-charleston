@@ -21,6 +21,11 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Free Quote | Soakd Window Cleaning Charleston SC"
+        description="Request a free quote for window cleaning, pressure washing, soft washing or gutter cleaning in Charleston SC. We respond within 1 hour. Call 843-826-6708."
+        canonical="/contact"
+      />
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">

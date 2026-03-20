@@ -6,6 +6,45 @@ import TrustBar from '../components/shared/TrustBar';
 import ServiceCard from '../components/shared/ServiceCard';
 import ReviewCard from '../components/shared/ReviewCard';
 import CTASection from '../components/shared/CTASection';
+import SEO from '../components/shared/SEO';
+
+const HOME_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Soakd Window Cleaning",
+  "image": "https://soakdcharleston.com/logo.png",
+  "telephone": "843-826-6708",
+  "email": "info@soakdcharleston.com",
+  "url": "https://soakdcharleston.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Charleston",
+    "addressRegion": "SC",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.7765,
+    "longitude": -79.9311
+  },
+  "areaServed": [
+    "Charleston SC","Summerville SC","Mount Pleasant SC","Goose Creek SC",
+    "James Island SC","Daniel Island SC","Johns Island SC","Seabrook Island SC",
+    "Isle of Palms SC","Folly Beach SC","Sullivans Island SC"
+  ],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "70"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "18:00"
+  }
+};
 
 const SERVICES = [
   {

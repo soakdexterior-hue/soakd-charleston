@@ -4,6 +4,7 @@ import { Star, ExternalLink } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import ReviewCard from '../components/shared/ReviewCard';
 import CTASection from '../components/shared/CTASection';
+import SEO from '../components/shared/SEO';
 
 const ALL_REVIEWS = [
   { name: 'Sarah M.', date: 'February 2026', text: 'Soakd did an incredible job on our windows. They were fast, professional, and our windows have never looked better. Highly recommend to anyone in Mount Pleasant!' },

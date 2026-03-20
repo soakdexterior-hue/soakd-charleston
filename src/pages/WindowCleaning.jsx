@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, Phone, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import CTASection from '../components/shared/CTASection';
+import SEO from '../components/shared/SEO';
 
 const BENEFITS = [
   'Crystal clear interior and exterior windows',

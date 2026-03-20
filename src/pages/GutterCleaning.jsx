@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, Phone, ArrowRight, Award, AlertTriangle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import CTASection from '../components/shared/CTASection';
+import SEO from '../components/shared/SEO';
 
 const INCLUDED = [
   'Complete debris removal from all gutters',

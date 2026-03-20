@@ -18,7 +18,7 @@ export default function SoftWashing() {
     <>
       <section className="relative overflow-hidden bg-primary">
         <div className="absolute inset-0 opacity-20">
-          <img src="/__generating__/img_ecc1b86a396f.png" alt="Soft washing service in Charleston SC" className="w-full h-full object-cover" />
+          <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png" alt="Soft washing service in Charleston SC" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
@@ -68,7 +68,7 @@ export default function SoftWashing() {
             </div>
             <div className="space-y-6">
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img src="/__generating__/img_ecc1b86a396f.png" alt="Soft washing a Charleston home" className="w-full" />
+                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png" alt="Soft washing a Charleston home" className="w-full" />
               </div>
               <div className="bg-white rounded-2xl p-8 border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">

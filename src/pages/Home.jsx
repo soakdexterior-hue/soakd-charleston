@@ -13,28 +13,28 @@ const SERVICES = [
     title: 'Window Cleaning',
     description: 'Crystal clear windows inside and out. We leave every pane sparkling so you can enjoy the Lowcountry views your home deserves.',
     path: '/window-cleaning',
-    image: '/__generating__/img_8c8b6ae10a1a.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/cb3a1e018_generated_67b0b0b3.png',
   },
   {
     icon: Zap,
     title: 'Pressure Washing',
     description: 'Blast away years of dirt, grime, and mildew from driveways, sidewalks, patios, and more. Your home will look brand new.',
     path: '/pressure-washing',
-    image: '/__generating__/img_6de816b88275.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/db442dc11_generated_01ad29cc.png',
   },
   {
     icon: ShieldCheck,
     title: 'Soft Washing',
     description: 'Gentle yet powerful cleaning for siding, roofs, and delicate surfaces. Perfect for Charleston\'s historic and coastal homes.',
     path: '/soft-washing',
-    image: '/__generating__/img_ecc1b86a396f.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png',
   },
   {
     icon: Award,
     title: 'Gutter Cleaning',
     description: 'Keep your gutters clear and flowing. We remove all debris to protect your home from water damage year-round.',
     path: '/gutter-cleaning',
-    image: '/__generating__/img_174acbf786a0.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/f83ec5140_generated_9c30a3c3.png',
   },
 ];
 
@@ -64,7 +64,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/__generating__/img_25948ba1100c.png"
+            src="https://media.base44.com/images/public/69bdabf65e992908c9993001/61b7ccd00_generated_8e9cf812.png"
             alt="Beautiful Charleston home with sparkling clean windows"
             className="w-full h-full object-cover"
           />

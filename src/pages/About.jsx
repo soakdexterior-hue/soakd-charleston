@@ -57,7 +57,7 @@ export default function About() {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="/__generating__/img_6b656392f0d3.png" alt="Soakd Window Cleaning team" className="w-full" />
+              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/7806fea0e_generated_d5d2c8d6.png" alt="Soakd Window Cleaning team" className="w-full" />
             </div>
           </div>
         </div>

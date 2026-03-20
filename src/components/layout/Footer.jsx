@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Droplets, Facebook, ArrowUpRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, ArrowUpRight } from 'lucide-react';
 
 const SERVICES = [
   { label: 'Window Cleaning', path: '/window-cleaning' },

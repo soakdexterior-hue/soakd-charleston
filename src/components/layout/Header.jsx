@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X, ChevronDown, Droplets } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const NAV_LINKS = [

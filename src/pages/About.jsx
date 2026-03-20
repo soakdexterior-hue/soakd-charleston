@@ -62,8 +62,13 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/7806fea0e_generated_d5d2c8d6.png" alt="Soakd Window Cleaning team" className="w-full" />
+            <div className="space-y-4">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/cd46ad0fb_Soakdteam.jpg" alt="Soakd Window Cleaning team under Spanish moss oak trees in Charleston SC" className="w-full object-cover" />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/624d3614d_Soakdteamwalking.jpg" alt="Soakd team walking ready for work in the Lowcountry" className="w-full object-cover" />
+              </div>
             </div>
           </div>
         </div>

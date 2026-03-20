@@ -73,7 +73,7 @@ export default function PressureWashing() {
             </div>
             <div className="space-y-6">
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/db442dc11_generated_01ad29cc.png" alt="Before and after pressure washing a driveway in Charleston SC" className="w-full" />
+                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/5345576dc_baylorsoakd.jpg" alt="Soakd team member pressure washing in Charleston SC" className="w-full" />
               </div>
               <div className="bg-white rounded-2xl p-8 border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">

@@ -75,8 +75,10 @@ export default function WindowCleaning() {
             </div>
 
             <div className="space-y-6">
+              <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/cb3a1e018_generated_67b0b0b3.png" alt="Streak-free window cleaning results on a Charleston SC home" className="w-full" />
+                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3332bdd29_Beforeandafter.jpg" alt="Before and after window cleaning by Soakd in Charleston SC" className="w-full" />
+              </div>
               </div>
               <div className="bg-white rounded-2xl p-8 border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">

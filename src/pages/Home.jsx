@@ -109,8 +109,8 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://media.base44.com/images/public/69bdabf65e992908c9993001/61b7ccd00_generated_8e9cf812.png"
-            alt="Beautiful Charleston home with sparkling clean windows"
+            src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3302ecbc4_generated_image.png"
+            alt="Beautiful Charleston Lowcountry home with sparkling clean windows"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/40" />
@@ -185,6 +185,19 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Before & After */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <span className="text-secondary font-semibold text-sm tracking-widest uppercase">Results</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3">See the Difference</h2>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3332bdd29_Beforeandafter.jpg" alt="Before and after window cleaning results by Soakd" className="w-full" />
           </div>
         </div>
       </section>

@@ -16,6 +16,7 @@ import GutterCleaning from './pages/GutterCleaning';
 import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -48,6 +49,7 @@ const AuthenticatedApp = () => {
         <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

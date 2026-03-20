@@ -39,13 +39,13 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Soakd Window Cleaning was founded right here in Charleston, SC, with a simple goal: to provide the highest quality exterior cleaning service in the Lowcountry with the fastest response time and a guarantee that stands behind every job.
+                Soakd Window Cleaning was born right here in the Lowcountry. For 2 years we've been helping Charleston homeowners keep their homes looking their absolute best.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Over the past two years, we've grown from a small startup to one of the most trusted names in exterior cleaning across the Charleston metro area. With 70 five-star reviews and counting, our reputation speaks for itself — and it's built one clean window, one sparkling driveway, and one happy homeowner at a time.
+                We're not a big faceless corporation — we're your neighbors, and we treat every home like it's our own. Our Clean Window Guarantee means we don't leave until you're 100% happy. Period.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We're locally owned and operated, which means when you call Soakd, you're talking to someone who lives and works right here in your community. From Mount Pleasant to Summerville, James Island to Daniel Island, we treat every home like it's our own.
+                With 70+ five-star reviews and the fastest response time in the Lowcountry, our reputation speaks for itself — built one clean window, one sparkling driveway, and one happy homeowner at a time.
               </p>
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">

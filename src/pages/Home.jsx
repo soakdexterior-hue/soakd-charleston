@@ -236,6 +236,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Clean Window Guarantee */}
+      <section className="py-20 bg-primary">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/20 mb-6">
+            <ShieldCheck className="w-8 h-8 text-secondary" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Clean Window Guarantee</h2>
+          <p className="text-white/80 text-lg leading-relaxed max-w-2xl mx-auto">
+            Not happy with your results? We come back and make it right — no questions asked. That's the Soakd promise to every single customer in the Lowcountry.
+          </p>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <CTASection />
     </>

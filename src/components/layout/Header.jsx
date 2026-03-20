@@ -54,14 +54,8 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <Droplets className="w-6 h-6 text-white" />
-              </div>
-              <div className="leading-tight">
-                <span className="text-xl font-bold text-primary tracking-tight">SOAKD</span>
-                <span className="block text-[10px] font-medium text-muted-foreground tracking-widest uppercase">Window Cleaning</span>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f9ff51873_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-14 w-auto object-contain" />
             </Link>
 
             {/* Desktop nav */}

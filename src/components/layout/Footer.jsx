@@ -22,14 +22,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
-                <Droplets className="w-6 h-6 text-white" />
-              </div>
-              <div className="leading-tight">
-                <span className="text-xl font-bold tracking-tight">SOAKD</span>
-                <span className="block text-[10px] font-medium text-white/60 tracking-widest uppercase">Window Cleaning</span>
-              </div>
+            <Link to="/" className="flex items-center mb-4">
+              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f9ff51873_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-16 w-auto object-contain rounded-xl" />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               The Lowcountry's most trusted window and exterior cleaning company. Serving Charleston and surrounding areas.

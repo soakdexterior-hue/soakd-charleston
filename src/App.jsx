@@ -42,6 +42,7 @@ const AuthenticatedApp = () => {
     <Routes>
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Navigate to="/" replace />} />
         <Route path="/window-cleaning" element={<WindowCleaning />} />
         <Route path="/pressure-washing" element={<PressureWashing />} />
         <Route path="/soft-washing" element={<SoftWashing />} />

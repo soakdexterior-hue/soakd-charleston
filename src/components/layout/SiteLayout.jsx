@@ -18,6 +18,7 @@ export default function SiteLayout() {
       <Footer />
       <ChatWidget />
       <QuotePopup />
+      <FloatingCTA />
     </div>
   );
 }

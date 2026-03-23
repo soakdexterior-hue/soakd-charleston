@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import ChatWidget from '../shared/ChatWidget';
 import ReviewBanner from '../shared/ReviewBanner';
+import QuotePopup from '../shared/QuotePopup';
 
 export default function SiteLayout() {
   return (

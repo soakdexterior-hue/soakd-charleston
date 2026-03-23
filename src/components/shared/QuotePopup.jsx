@@ -16,7 +16,6 @@ export default function QuotePopup() {
   }, []);
 
   const dismiss = () => {
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
     setVisible(false);
   };
 

@@ -5,6 +5,7 @@ import Footer from './Footer';
 import ChatWidget from '../shared/ChatWidget';
 import ReviewBanner from '../shared/ReviewBanner';
 import QuotePopup from '../shared/QuotePopup';
+import FloatingCTA from '../shared/FloatingCTA';
 
 export default function SiteLayout() {
   return (

@@ -11,10 +11,7 @@ export default function QuotePopup() {
   const [form, setForm] = useState({ name: '', phone: '', service: '', address: '' });
 
   useEffect(() => {
-    const dismissed = localStorage.getItem(STORAGE_KEY);
-    if (dismissed) return;
-
-    const timer = setTimeout(() => setVisible(true), 5000);
+    const timer = setTimeout(() => setVisible(true), 2000);
     return () => clearTimeout(timer);
   }, []);
 

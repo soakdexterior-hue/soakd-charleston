@@ -15,8 +15,9 @@ export default function Contact() {
     name: '', phone: '', email: '', service: '', address: '', message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    await base44.functions.invoke('handleContactForm', form);
     setSubmitted(true);
   };
 

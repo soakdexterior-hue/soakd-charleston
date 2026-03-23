@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Send } from 'lucide-react';
+import { X } from 'lucide-react';
 import { base44 } from '@/api/base44Client';
 
 const STORAGE_KEY = 'soakd_popup_dismissed';

@@ -25,7 +25,6 @@ export default function QuotePopup() {
     await base44.functions.invoke('handleContactForm', { ...form, email: '', message: '' });
     setLoading(false);
     setSubmitted(true);
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
     setTimeout(() => setVisible(false), 3000);
   };
 

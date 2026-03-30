@@ -68,8 +68,8 @@ function StaggerGrid({ children, className }) {
         <div
           style={{
             opacity: visible ? 1 : 0,
-            transform: visible ? 'translateY(0)' : 'translateY(28px)',
-            transition: `opacity 0.5s ease ${i * 0.1}s, transform 0.5s ease ${i * 0.1}s`,
+            transform: visible ? 'translateY(0)' : 'translateY(32px)',
+            transition: `opacity 0.6s ease ${i * 0.18}s, transform 0.6s ease ${i * 0.18}s`,
           }}
         >
           {child}
@@ -93,8 +93,8 @@ export default function Home() {
       <section className="relative bg-[#0f1e3d] overflow-hidden" style={{ minHeight: '100vh' }}>
         {/* Background photo — team walking */}
         <div className="absolute inset-0">
-          <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover object-top" style={{ opacity: 0.70 }} />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(15,30,61,0.35) 0%, rgba(15,30,61,0.75) 70%, rgba(15,30,61,1) 100%)' }} />
+          <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover" style={{ opacity: 0.80, objectPosition: 'center center' }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(15,30,61,0.25) 0%, rgba(15,30,61,0.65) 65%, rgba(15,30,61,1) 100%)' }} />
         </div>
 
 

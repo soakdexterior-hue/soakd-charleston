@@ -52,14 +52,14 @@ const SERVICES = [
     title: 'Window Cleaning',
     description: 'Your windows are the eyes of your home. We clean every pane inside and out, removing hard water stains, salt deposits, and pollen buildup. Backed by our Clean Window Guarantee.',
     path: '/window-cleaning',
-    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/cb3a1e018_generated_67b0b0b3.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/0dae65802_windowcleaningpic.jpg',
   },
   {
     icon: Zap,
     title: 'Pressure Washing',
     description: 'Driveways, sidewalks, patios, and pool decks — we blast away years of grime, algae, and staining with professional grade equipment. Your hardscapes will look brand new.',
     path: '/pressure-washing',
-    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/db442dc11_generated_01ad29cc.png',
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/6bfb982d5_tempImageRL4qIA.jpg',,
   },
   {
     icon: ShieldCheck,

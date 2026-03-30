@@ -105,41 +105,59 @@ export default function Home() {
         canonical="/"
         schema={HOME_SCHEMA}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3302ecbc4_generated_image.png"
-            alt="Beautiful Charleston Lowcountry home with sparkling clean windows"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/40" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-32 lg:py-40">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-              70 Five-Star Reviews Across Charleston
+      {/* Hero - Split Layout */}
+      <section className="relative overflow-hidden" style={{minHeight: '90vh'}}>
+        <div className="grid grid-cols-1 md:grid-cols-2" style={{minHeight: '90vh'}}>
+          {/* Left panel - Truck photo with text overlay */}
+          <div className="relative flex items-center justify-center" style={{minHeight: '50vh'}}>
+            <img
+              src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png"
+              alt="Soakd truck at Charleston home"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/30" />
+            <div className="relative z-10 px-8 py-16 md:py-0 max-w-lg">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium px-4 py-2 rounded-full mb-6">
+                <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                70 Five-Star Reviews Across Charleston
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                The Lowcountry's Most Trusted Window &amp; Exterior Cleaning Company
+              </h1>
+              <p className="text-lg text-white/80 leading-relaxed mb-8">
+                Serving Charleston and surrounding areas with a Clean Window Guarantee and the fastest response time in the business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:843-826-6708">
+                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold px-8 text-base w-full sm:w-auto">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call Now
+                  </Button>
+                </a>
+                <Link to="/contact">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-8 text-base w-full sm:w-auto">
+                    Get Free Quote
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              The Lowcountry's Most Trusted Window &amp; Exterior Cleaning Company
-            </h1>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-xl">
-              Serving Charleston and surrounding areas with a Clean Window Guarantee and the fastest response time in the business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:843-826-6708">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold px-8 text-base w-full sm:w-auto">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </Button>
-              </a>
-              <Link to="/contact">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-8 text-base w-full sm:w-auto">
-                  Get Free Quote
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
+          </div>
+          {/* Right panel - stacked photos */}
+          <div className="flex flex-col" style={{minHeight: '50vh'}}>
+            <div className="flex-1 relative overflow-hidden" style={{minHeight: '45vh'}}>
+              <img
+                src="https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg"
+                alt="Soakd team in Charleston"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex-1 relative overflow-hidden" style={{minHeight: '45vh'}}>
+              <img
+                src="https://media.base44.com/images/public/69bdabf65e992908c9993001/6c22e068c_waterfedpolepic.jpg"
+                alt="Professional window cleaning with water fed pole"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -185,6 +203,21 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Strip */}
+      <section className="py-0 bg-foreground">
+        <div className="grid grid-cols-3 h-64">
+          <div className="overflow-hidden">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3220ac9d9_soappic.jpg" alt="Window cleaning soap application" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f7b8d6e92_glidingglasspic.jpg" alt="Professional glass cleaning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="overflow-hidden">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/0dae65802_windowcleaningpic.jpg" alt="Window cleaning close up" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>

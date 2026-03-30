@@ -59,7 +59,7 @@ const SERVICES = [
     title: 'Pressure Washing',
     description: 'Driveways, sidewalks, patios, and pool decks — we blast away years of grime, algae, and staining with professional grade equipment. Your hardscapes will look brand new.',
     path: '/pressure-washing',
-    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/6bfb982d5_tempImageRL4qIA.jpg',,
+    image: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/6bfb982d5_tempImageRL4qIA.jpg',
   },
   {
     icon: ShieldCheck,

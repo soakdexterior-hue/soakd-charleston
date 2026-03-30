@@ -14,8 +14,10 @@ const HOME_SCHEMA = {
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "70" }
 };
 
-const TRUCK_IMG   = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
-const TEAM_IMG    = "https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg";
+const TRUCK_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
+const TEAM_IMG      = "https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg";
+const WATERFED_IMG  = "https://media.base44.com/images/public/69bdabf65e992908c9993001/5c61a750a_waterfedpolepic.jpg";
+const SOAP_IMG      = "https://media.base44.com/images/public/69bdabf65e992908c9993001/91ca4afcd_soappic.jpg";
 
 const SERVICES = [
   { icon: Sparkles,    label: 'Window Cleaning',  desc: 'Interior & exterior, screens, tracks and sills included.',         path: '/window-cleaning' },
@@ -89,28 +91,13 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="relative bg-[#0f1e3d] overflow-hidden" style={{ minHeight: '100vh' }}>
-        {/* Background photos */}
-        <div className="absolute inset-0 flex">
-          <div className="w-1/2 h-full">
-            <img src={TRUCK_IMG} alt="Soakd truck" className="w-full h-full object-cover" style={{ opacity: 0.55 }} />
-          </div>
-          <div className="w-1/2 h-full">
-            <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover object-top" style={{ opacity: 0.55 }} />
-          </div>
-          {/* gradient overlay */}
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(15,30,61,0.45) 0%, rgba(15,30,61,0.80) 70%, rgba(15,30,61,1) 100%)' }} />
+        {/* Background photo — team walking */}
+        <div className="absolute inset-0">
+          <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover object-top" style={{ opacity: 0.70 }} />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(15,30,61,0.35) 0%, rgba(15,30,61,0.75) 70%, rgba(15,30,61,1) 100%)' }} />
         </div>
 
-        {/* Gold top banner */}
-        <a
-          href="https://www.google.com/search?q=soakd+exterior#mpd=~16744916890549171315/customers/reviews"
-          target="_blank" rel="noopener noreferrer"
-          className="relative z-10 flex items-center justify-center gap-3 bg-yellow-400 text-[#0f1e3d] text-sm font-bold py-3 px-4 hover:bg-yellow-300 transition-colors"
-        >
-          <span className="flex gap-0.5">{[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-[#0f1e3d] text-[#0f1e3d]" />)}</span>
-          70+ Five-Star Google Reviews · Trusted by Charleston Homeowners
-          <ArrowRight className="w-4 h-4" />
-        </a>
+
 
         {/* Hero content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -177,12 +164,15 @@ export default function Home() {
 
       {/* ── PHOTO STRIP ── */}
       <section className="bg-[#0a1628]">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-3">
           <div className="h-64 md:h-80 overflow-hidden">
             <img src={TRUCK_IMG} alt="Soakd truck" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="h-64 md:h-80 overflow-hidden">
-            <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+            <img src={WATERFED_IMG} alt="Water fed pole cleaning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div className="h-64 md:h-80 overflow-hidden">
+            <img src={SOAP_IMG} alt="Window soap cleaning" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
         </div>
       </section>

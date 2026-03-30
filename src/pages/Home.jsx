@@ -106,62 +106,61 @@ export default function Home() {
         schema={HOME_SCHEMA}
       />
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{minHeight: '92vh'}}>
-        {/* Background: two photos fading into each other */}
+      <section className="relative" style={{minHeight: '95vh'}}>
+        {/* Full-bleed split background */}
         <div className="absolute inset-0 flex">
-          {/* Left photo - truck */}
-          <div className="w-1/2 relative">
-            <img
-              src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png"
-              alt="Soakd truck"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-1/2 h-full">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png" alt="Soakd truck" className="w-full h-full object-cover" />
           </div>
-          {/* Right photo - team */}
-          <div className="w-1/2 relative">
-            <img
-              src="https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg"
-              alt="Soakd team"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-1/2 h-full">
+            <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg" alt="Soakd team" className="w-full h-full object-cover object-top" />
           </div>
-          {/* Center fade blend */}
-          <div className="absolute inset-0" style={{background: 'linear-gradient(to right, transparent 30%, rgba(27,58,107,0.55) 50%, transparent 70%)'}} />
-          {/* Overall dark overlay for text readability */}
-          <div className="absolute inset-0 bg-primary/60" />
-          {/* Left edge fade */}
-          <div className="absolute inset-y-0 left-0 w-32" style={{background: 'linear-gradient(to right, rgba(27,58,107,0.7), transparent)'}} />
-          {/* Right edge fade */}
-          <div className="absolute inset-y-0 right-0 w-32" style={{background: 'linear-gradient(to left, rgba(27,58,107,0.7), transparent)'}} />
+          {/* Seamless center blend */}
+          <div className="absolute inset-0" style={{background: 'linear-gradient(to right, rgba(15,35,75,0.72) 0%, rgba(15,35,75,0.45) 40%, rgba(15,35,75,0.45) 60%, rgba(15,35,75,0.72) 100%)'}} />
+          <div className="absolute inset-0" style={{background: 'linear-gradient(to right, transparent 38%, rgba(15,35,75,0.6) 50%, transparent 62%)'}} />
         </div>
 
-        {/* Content overlay */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6" style={{minHeight: '92vh'}}>
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium px-4 py-2 rounded-full mb-6">
-            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            70 Five-Star Reviews Across Charleston
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-4 max-w-3xl">
-            Charleston's Premier<br />Window Cleaning Company
+        {/* Centered content */}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24" style={{minHeight: '95vh'}}>
+          {/* Rating badge */}
+          <a
+            href="https://www.google.com/search?q=soakd+exterior#mpd=~16744916890549171315/customers/reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-8 hover:bg-white/20 transition-colors"
+          >
+            <span className="flex gap-0.5">{[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}</span>
+            <span>70+ Five-Star Google Reviews</span>
+            <ArrowRight className="w-3.5 h-3.5 opacity-70" />
+          </a>
+
+          {/* Headline */}
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-5 max-w-4xl tracking-tight">
+            Charleston's Window &amp;<br className="hidden md:block" /> Exterior Cleaning Experts
           </h1>
-          <p className="text-xl md:text-2xl text-secondary font-semibold mb-4">Crystal Clear Windows. Guaranteed.</p>
-          <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-xl">
-            Professional window cleaning, pressure washing & exterior services for Lowcountry homes. We respond within 1 hour.
+          <div className="w-16 h-1 bg-secondary rounded-full mb-6" />
+          <p className="text-lg md:text-xl text-white/80 max-w-lg mb-10 leading-relaxed">
+            Professional window cleaning, pressure washing &amp; soft washing across the Lowcountry. Guaranteed results. 1-hour response.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:843-826-6708">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold px-10 text-base w-full sm:w-auto">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/95 font-bold px-10 py-6 text-base rounded-xl shadow-lg w-full sm:w-auto">
                 <Phone className="w-5 h-5 mr-2" />
                 Call 843-826-6708
               </Button>
             </a>
             <Link to="/contact">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-10 text-base w-full sm:w-auto">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-10 py-6 text-base rounded-xl shadow-lg w-full sm:w-auto">
                 Get Free Quote
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
           </div>
+
+          {/* Scroll hint */}
+          <p className="text-white/40 text-sm mt-14 tracking-widest uppercase">Scroll to explore</p>
         </div>
       </section>
 
@@ -250,7 +249,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-10 space-y-4">
-            <a href="https://www.google.com/maps/place/Soakd+Window+Cleaning" target="_blank" rel="noopener noreferrer" className="block text-secondary font-semibold hover:underline">
+            <a href="https://www.google.com/search?q=soakd+exterior#mpd=~16744916890549171315/customers/reviews" target="_blank" rel="noopener noreferrer" className="block text-secondary font-semibold hover:underline">
               70+ Five Star Reviews from Lowcountry Homeowners →
             </a>
             <Link to="/reviews">

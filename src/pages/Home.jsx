@@ -162,8 +162,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── ROTATING REVIEWS TICKER ── */}
+      <section className="bg-[#0c1830] py-6 border-t border-white/10 overflow-hidden">
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to right, #0c1830, transparent)' }} />
+          <div className="absolute right-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to left, #0c1830, transparent)' }} />
+          <div className="flex gap-6 w-max" style={{ animation: 'ticker 40s linear infinite' }}>
+            {[...REVIEWS, ...REVIEWS, ...REVIEWS, ...REVIEWS].map((r, i) => (
+              <div key={i} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-5 py-3 shrink-0">
+                <div className="flex gap-0.5">{[1,2,3,4,5].map(s => <Star key={s} className="w-3 h-3 fill-yellow-400 text-yellow-400" />)}</div>
+                <p className="text-white/70 text-sm shrink-0 max-w-xs" style={{ maxWidth: '280px', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>"{r.text}"</p>
+                <p className="text-white/40 text-xs shrink-0">— {r.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <style>{`@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }`}</style>
+      </section>
+
       {/* ── PHOTO STRIP ── */}
-      <section className="bg-[#0a1628]">
+      <section className="bg-[#0a1628] relative overflow-hidden">
+        <div className="absolute left-0 top-0 bottom-0 w-20 z-10" style={{ background: 'linear-gradient(to right, #0a1628, transparent)' }} />
+        <div className="absolute right-0 top-0 bottom-0 w-20 z-10" style={{ background: 'linear-gradient(to left, #0a1628, transparent)' }} />
         <div className="grid grid-cols-3">
           <div className="h-64 md:h-80 overflow-hidden">
             <img src={TRUCK_IMG} alt="Soakd truck" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />

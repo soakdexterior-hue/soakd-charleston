@@ -3,17 +3,21 @@ import { MessageCircle, X, Phone, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { base44 } from '@/api/base44Client';
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({ name: '', phone: '', message: '' });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    await base44.functions.invoke('handleContactForm', { name: form.name, phone: form.phone, message: form.message, email: '', service: '', address: '' });
     setSent(true);
     setTimeout(() => {
       setSent(false);
       setOpen(false);
+      setForm({ name: '', phone: '', message: '' });
     }, 3000);
   };
 
@@ -40,9 +44,9 @@ export default function ChatWidget() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="p-4 space-y-3">
-              <Input placeholder="Your name" required className="text-sm" />
-              <Input type="tel" placeholder="Phone number" required className="text-sm" />
-              <Textarea placeholder="How can we help?" required className="text-sm h-20 resize-none" />
+              <Input placeholder="Your name" required className="text-sm" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} />
+              <Input type="tel" placeholder="Phone number" required className="text-sm" value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} />
+              <Textarea placeholder="How can we help?" required className="text-sm h-20 resize-none" value={form.message} onChange={(e) => setForm({...form, message: e.target.value})} />
               <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold">
                 Send Message
               </Button>

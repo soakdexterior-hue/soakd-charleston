@@ -217,6 +217,258 @@ const BLOG_POSTS = [
       },
     ],
   },
+  {
+    id: 7,
+    slug: "soft-wash-vs-pressure-wash-charleston-home",
+    title: "Soft Wash vs Pressure Wash: Which Is Right for Your Charleston Home?",
+    date: "April 2026",
+    category: "Soft Washing & Pressure Washing",
+    seoTitle: "Soft Wash vs Pressure Wash Charleston SC | Which Is Right for You? | Soakd",
+    metaDescription: "Not sure whether you need soft washing or pressure washing for your Charleston home? Soakd explains which method is safe for each surface. Free estimate: 843-826-6708.",
+    intro: "Homeowners across Charleston ask us the same question every week: should I get soft washing or pressure washing? The answer depends entirely on what surface you're cleaning and what's growing on it. Using the wrong method can damage your home — here's how to get it right.",
+    sections: [
+      {
+        heading: "What Is Soft Washing?",
+        body: "Soft washing is a low-pressure cleaning method that combines biodegradable cleaning solutions with gentle water flow to safely remove algae, mold, mildew, and organic staining from delicate surfaces. The cleaning agents do the work — not the water pressure — which means zero risk of damage to your siding, stucco, painted wood, or roof shingles. Soft washing is the only manufacturer-approved method for cleaning asphalt shingle roofs.",
+      },
+      {
+        heading: "What Is Pressure Washing?",
+        body: "Pressure washing uses high-pressure water to blast stubborn buildup off hard, durable surfaces like concrete driveways, brick patios, sidewalks, and pool decks. It's extremely effective on these surfaces — but applying that same pressure to softer materials like vinyl siding, aging wood, or stucco can cause serious damage including cracking, water intrusion, and stripped paint.",
+      },
+      {
+        heading: "Which Surfaces Need Which Method?",
+        body: "",
+        bullets: [
+          "Concrete driveway, brick patio, sidewalks → Pressure Washing",
+          "Vinyl siding, stucco, painted wood → Soft Washing",
+          "Roof (shingles or tile) → Soft Washing only — never pressure wash",
+          "Wood decks and fences → Low-pressure soft washing",
+          "Windows → Professional window cleaning (separate process)",
+          "Older Charleston homes with painted or fragile surfaces → Soft Washing always",
+        ],
+      },
+      {
+        heading: "Why Charleston Homes Need Soft Washing More Than Most",
+        body: "Charleston's warm, humid climate and coastal salt air create ideal conditions for algae, Gloeocapsa magma (the black streak algae), mold, and mildew to grow rapidly on home exteriors. Professional soft washing with biodegradable solutions kills these organisms at the root — not just on the surface — which prevents regrowth for 12–24 months. Pressure washing alone cannot achieve this result and can actually spread algae spores if used on the wrong surfaces.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is soft washing safe for my roof?",
+        answer: "Yes — soft washing is actually the only safe method for cleaning asphalt shingle roofs. The low-pressure application won't strip granules or void your roof warranty. Pressure washing shingles can cause significant damage and even void manufacturer warranties, which is why professional roof cleaners exclusively use soft wash techniques.",
+      },
+      {
+        question: "How long does soft washing last compared to pressure washing?",
+        answer: "Soft washing typically lasts 12–24 months because the cleaning solution kills algae and mold at the root, preventing regrowth. Pressure washing removes visible buildup but doesn't treat the underlying organisms, so growth often returns much faster — sometimes within weeks in Charleston's humid climate.",
+      },
+      {
+        question: "Can I pressure wash my own driveway instead of hiring a professional?",
+        answer: "You can, but professional residential exterior cleaning produces far better results. Pros use commercial-grade equipment, the right pressure settings per surface type, and professional detergents. DIY pressure washers often miss areas, apply inconsistent pressure, and risk damaging surfaces — especially on older driveways or decorative concrete.",
+      },
+    ],
+  },
+  {
+    id: 8,
+    slug: "how-often-professional-window-cleaning",
+    title: "How Often Should You Get Your Windows Professionally Cleaned? (And Why It Matters)",
+    date: "April 2026",
+    category: "Window Cleaning",
+    seoTitle: "How Often Should Windows Be Professionally Cleaned? | Soakd Charleston SC",
+    metaDescription: "Wondering how often to schedule professional window cleaning? Soakd covers residential and commercial schedules, signs to watch for, and why DIY falls short. Call 843-826-6708.",
+    intro: "Most homeowners and business owners wait too long between professional window cleanings — and by then, damage from salt buildup, hard water stains, and oxidation is already underway. Here's a straightforward guide to how often you should schedule professional window washing in Charleston, SC.",
+    sections: [
+      {
+        heading: "Residential Window Cleaning: A Seasonal Guide",
+        body: "For most Charleston homeowners, professional window cleaning twice a year is the minimum. Schedule once in the spring to clear heavy pollen and winter grime, and once in the fall to remove salt, humidity residue, and summer buildup before the cooler months. Homes near the coast — Isle of Palms, Folly Beach, Sullivan's Island — should schedule every 3–4 months. Salt air is highly corrosive and can permanently etch glass if deposits are left to accumulate.",
+      },
+      {
+        heading: "Commercial Window Cleaning: Retail, Office & Storefronts",
+        body: "Commercial properties have higher cleaning demands. Storefronts and retail shops benefit from monthly window cleaning to maintain curb appeal and first impressions — dirty windows actively turn customers away. Office buildings generally need cleaning every 4–6 weeks. High-traffic areas, restaurants, and beachfront businesses may need weekly service. Regular commercial window cleaning in Charleston SC communicates professionalism and care to every customer who walks by.",
+      },
+      {
+        heading: "Signs Your Windows Need Immediate Attention",
+        body: "",
+        bullets: [
+          "Visible streaks, haze, or white mineral deposits on the glass",
+          "Yellow or green pollen coating on exterior panes",
+          "Hard water stains or rings that don't wipe off",
+          "Salt buildup near coastal or waterfront properties",
+          "Rooms feel noticeably darker than they used to",
+          "Grease, smoke, or fingerprint buildup on commercial glass",
+        ],
+      },
+      {
+        heading: "Why Professional Cleaning Beats DIY Every Time",
+        body: "DIY window cleaning with a squeegee and store-bought cleaner can remove surface dust, but it won't eliminate hard water stains, mineral deposits, or oxidation — and can leave streaks that make windows look worse. Professional window washers use pure water systems or professional-grade solutions that remove contaminants at a molecular level, leaving glass truly streak-free. Pros also clean screens, tracks, and sills — the parts most homeowners skip.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How often should windows be professionally cleaned in Charleston SC?",
+        answer: "Most Charleston homeowners should schedule professional window cleaning at least twice a year. Coastal properties near salt air exposure should book every 3–4 months. Commercial storefronts benefit from monthly service. The more exposure your windows have to pollen, salt, humidity, and traffic, the more frequently they need professional attention.",
+      },
+      {
+        question: "Can hard water stains on windows be removed professionally?",
+        answer: "Yes — professional window cleaners use specialized hard water stain removal solutions that dissolve mineral deposits without scratching glass. DIY methods rarely work on stubborn hard water stains. If left too long, mineral deposits can etch permanently into the glass surface, at which point restoration or replacement is the only option.",
+      },
+      {
+        question: "Is professional window cleaning worth it for my home?",
+        answer: "Absolutely. Beyond aesthetics, regular professional window cleaning protects your investment by preventing permanent glass damage from mineral buildup and oxidation. It also improves natural light inside your home, enhances curb appeal, and can even improve energy efficiency by allowing more sunlight through clean panes in winter months.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    slug: "commercial-pressure-washing-charleston-business",
+    title: "Why Your Charleston Business Needs Regular Commercial Pressure Washing",
+    date: "April 2026",
+    category: "Commercial Cleaning",
+    seoTitle: "Commercial Pressure Washing Charleston SC | Soakd Exterior Cleaning",
+    metaDescription: "Regular commercial pressure washing in Charleston SC protects your property, boosts curb appeal, and reduces liability. Get a free commercial quote from Soakd: 843-826-6708.",
+    intro: "Your building's exterior is the first thing customers, clients, and tenants see. In Charleston's humid, coastal climate, grime, mold, mildew, and algae accumulate fast — and for commercial properties, that buildup costs you more than just appearances. Here's why regular commercial pressure washing is a smart investment for any Charleston business.",
+    sections: [
+      {
+        heading: "Curb Appeal Drives Revenue for Retail and Office Spaces",
+        body: "Studies consistently show that a clean, well-maintained exterior increases foot traffic and customer trust. For retail shops, restaurants, and service businesses along Charleston's busiest corridors, storefront washing can directly impact how many people walk through your door. A grimy façade tells customers you don't sweat the details — and they'll wonder what else you're neglecting. Regular commercial exterior cleaning keeps your brand looking sharp year-round.",
+      },
+      {
+        heading: "Grime and Mold Damage Surfaces — and Cost You More Long-Term",
+        body: "Algae, mold, and mildew aren't just ugly — they actively degrade building materials. On concrete, biological growth opens micro-cracks that expand over time. On painted surfaces, moisture trapped under organic growth leads to peeling and rot. Commercial building washing on a regular schedule is a fraction of the cost of repainting, resealing, or replacing damaged surfaces. In Charleston's humid environment, neglect accelerates surface deterioration significantly.",
+      },
+      {
+        heading: "Slippery Walkways and Parking Lots Are a Liability Risk",
+        body: "Algae and mold growth on walkways, sidewalks, and parking lot surfaces creates serious slip-and-fall hazards. In a city like Charleston where rain is frequent and humidity is constant, organic growth on exterior surfaces can develop quickly. A single slip-and-fall incident can result in lawsuits that cost far more than years of professional parking lot cleaning and walkway maintenance. Regular pressure washing isn't just maintenance — it's risk management.",
+      },
+      {
+        heading: "Scheduled Cleaning Saves Money and Meets Property Standards",
+        body: "Many commercial properties in Charleston are subject to HOA, landlord, or local property standards that require regular exterior maintenance. Staying ahead with a scheduled commercial pressure washing program prevents violations, lease disputes, and costly last-minute cleaning bills. Most Soakd commercial clients save money by setting up recurring cleaning contracts — we offer competitive rates for monthly, quarterly, or bi-annual service agreements across Charleston SC and surrounding areas.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How often should commercial properties be pressure washed in Charleston SC?",
+        answer: "Most commercial properties benefit from professional exterior cleaning every 3–6 months. High-traffic retail locations, restaurants, and properties near the coast may need monthly or bi-monthly service. We recommend an initial assessment to determine the right schedule — factors include traffic volume, proximity to salt air, surrounding vegetation, and surface materials.",
+      },
+      {
+        question: "Does commercial pressure washing disrupt my business operations?",
+        answer: "At Soakd, we schedule commercial jobs to minimize disruption — early mornings, evenings, or weekends based on your preference. Most commercial exterior cleaning projects are completed efficiently with professional equipment. We'll work around your hours so customers and staff aren't impacted during peak business times.",
+      },
+      {
+        question: "Can pressure washing damage my building's exterior?",
+        answer: "Only if done incorrectly. Professional commercial pressure washing uses the right pressure settings for each surface — high pressure on concrete and brick, soft washing for painted walls, siding, and stucco. Soakd assesses every surface before beginning work to ensure the safest, most effective method is used, protecting your property while delivering excellent results.",
+      },
+    ],
+  },
+  {
+    id: 10,
+    slug: "pressure-washing-home-exterior-charleston-sc-guide",
+    title: "The Complete Guide to Pressure Washing Your Home's Exterior in Charleston, SC",
+    date: "April 2026",
+    category: "Pressure Washing",
+    seoTitle: "Complete Guide to Pressure Washing Home Exterior in Charleston SC | Soakd",
+    metaDescription: "Everything Charleston homeowners need to know about pressure washing: surfaces, timing, professional vs DIY, and what to expect. Free quote: 843-826-6708.",
+    intro: "Whether you're looking to clean your driveway, refresh your home's siding, or tackle a weathered deck, pressure washing is one of the most effective ways to restore your home's exterior. This complete guide covers everything Charleston, SC homeowners need to know before booking a pressure washing service.",
+    sections: [
+      {
+        heading: "What Surfaces Can Be Pressure Washed?",
+        body: "",
+        bullets: [
+          "Driveways and parking pads (concrete, asphalt, pavers)",
+          "Sidewalks and walkways",
+          "Brick and stone patios",
+          "Pool decks and hardscape",
+          "Vinyl, brick, and fiber cement siding (with appropriate pressure)",
+          "Wood and composite decks (low pressure only)",
+          "Fences (wood, vinyl, aluminum)",
+          "Gutters and downspout exteriors",
+        ],
+      },
+      {
+        heading: "When Is the Best Time to Pressure Wash in Charleston, SC?",
+        body: "Spring is the most popular season for pressure washing in Charleston — right after pollen season peaks in March and April, when homes are coated in yellow-green dust. Fall is the second-best time, clearing summer humidity residue before the holidays. Avoid pressure washing during Charleston's hurricane season peak (August–October) if possible, as heavy rainfall will undo the work quickly. Winter is actually a decent option — lower humidity means surfaces dry faster and stay cleaner longer. The best rule: pressure wash when your home looks like it needs it, regardless of season.",
+      },
+      {
+        heading: "Signs You Need a Professional vs. DIY",
+        body: "Small jobs like rinsing a single patio section are manageable with a rented pressure washer. But for full home exterior cleaning, roof adjacent surfaces, two-story homes, or any job involving soft washing (siding, stucco, roofs), hiring a professional pressure washing company in Charleston SC is the right call. Pros bring commercial-grade equipment, the right detergents for each surface, and the experience to avoid costly mistakes like stripping paint, cracking grout, or forcing water behind siding panels.",
+      },
+      {
+        heading: "How to Choose a Reputable Local Pressure Washing Company",
+        body: "",
+        bullets: [
+          "Verify they carry general liability insurance — always",
+          "Check Google Reviews from verified local customers",
+          "Ask if they use soft washing for appropriate surfaces",
+          "Request a clear, upfront quote with no hidden fees",
+          "Confirm they offer a satisfaction guarantee",
+          "Look for a locally owned company familiar with Charleston's specific climate challenges",
+        ],
+      },
+      {
+        heading: "What to Expect During a Professional Pressure Washing Service",
+        body: "A professional exterior cleaning from Soakd begins with a surface assessment to determine the right pressure and method for each area. We pre-treat any organic growth areas with appropriate solutions, then work systematically across each surface. Driveways, patios, and concrete are washed with high pressure; siding and wood surfaces receive low-pressure soft washing treatment. The process typically takes 2–4 hours for an average Charleston home. We clean up debris and rinse surrounding areas before leaving — no mess left behind.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does pressure washing cost in Charleston, SC?",
+        answer: "Pricing varies by surface type, square footage, and job complexity. Driveway cleaning typically ranges from $100–$250. Full home exterior washing runs $250–$600+ depending on home size and condition. Soakd provides free, no-obligation quotes for all pressure washing services in Charleston SC — call or text 843-826-6708 for an estimate.",
+      },
+      {
+        question: "Will pressure washing damage my driveway or concrete?",
+        answer: "Not when done correctly. Professional pressure washers use appropriate PSI settings for each surface. Concrete can withstand higher pressure, while older or decorative concrete requires lower settings. DIY users sometimes damage surfaces by holding the wand too close or using excessive pressure. Professional services eliminate this risk by matching equipment settings to each surface type.",
+      },
+      {
+        question: "How long does a pressure washed surface stay clean in Charleston?",
+        answer: "In Charleston's humid climate, driveways and concrete typically stay clean for 6–12 months. Soft-washed siding lasts 12–24 months before significant organic regrowth. Proximity to trees, the coast, and the amount of foot or vehicle traffic all affect how quickly surfaces re-soil. Regular scheduled cleaning is the most cost-effective way to maintain results.",
+      },
+      {
+        question: "Do I need to be home during the pressure washing service?",
+        answer: "You don't need to be present the entire time, but we recommend being available at the start so we can walk through the job together and note any areas of concern. You'll need to ensure water access is available and pets or vehicles are moved away from the work areas. Most clients check in at the beginning and end of service.",
+      },
+    ],
+  },
+  {
+    id: 11,
+    slug: "black-streaks-roof-algae-removal-charleston",
+    title: "Black Streaks on Your Roof? Here's What They Are and How to Remove Them Safely",
+    date: "April 2026",
+    category: "Roof Soft Washing",
+    seoTitle: "Black Streaks on Roof? Safe Roof Algae Removal Charleston SC | Soakd",
+    metaDescription: "Black streaks on your roof are Gloeocapsa Magma algae — common in Charleston's humid climate. Soakd safely removes them with soft washing. Free quote: 843-826-6708.",
+    intro: "If you've noticed dark black or gray streaks running down your roof, you're not imagining things — and it's not dirt. Those streaks are a sign of a living organism that's actively feeding on your shingles. Here's what's causing it, why it matters, and how to get rid of it safely.",
+    sections: [
+      {
+        heading: "What Causes Black Streaks on Roofs?",
+        body: "Black roof streaks are caused by Gloeocapsa Magma — a type of cyanobacteria (commonly called algae) that spreads via airborne spores. It thrives in warm, humid environments and feeds on the limestone filler used in asphalt shingles. As the algae colony grows, it produces a dark pigmented sheath that causes the characteristic black streak appearance. Left untreated, it degrades shingle granules, shortens roof lifespan, and can spread to neighboring homes via wind.",
+      },
+      {
+        heading: "Why Black Streaks Are So Common in Charleston's Coastal Climate",
+        body: "Charleston, SC sits in one of the most algae-friendly climates in the country. High humidity, warm temperatures, and frequent rainfall create ideal conditions for Gloeocapsa Magma to flourish year-round. Homes surrounded by trees or in shaded areas are especially vulnerable, as reduced sunlight allows moisture to linger on shingles longer. Coastal salt air can also degrade protective shingle coatings, making roofs even more susceptible to biological growth in communities like Mount Pleasant, James Island, and West Ashley.",
+      },
+      {
+        heading: "Why Pressure Washing Your Roof Is a Bad Idea",
+        body: "High-pressure washing is one of the worst things you can do to a shingle roof. The force strips away the protective granules that shield shingles from UV rays and weather. This voids most manufacturer warranties and accelerates aging dramatically — sometimes shortening a roof's lifespan by years. Many insurance companies also deny claims on pressure-washed roofs. The Asphalt Roofing Manufacturers Association (ARMA) specifically recommends low-pressure soft washing as the only approved cleaning method.",
+      },
+      {
+        heading: "How Soft Washing Safely Removes Roof Algae and Prevents Regrowth",
+        body: "Roof soft washing applies a professional-grade, biodegradable cleaning solution at low pressure to kill algae, mold, and mildew at the root. Unlike pressure washing, which only removes surface buildup, soft washing eliminates the organism entirely — which means results last far longer. In Charleston's climate, a professional roof soft wash treatment typically prevents regrowth for 2–3 years. The cleaning solution continues working after application, neutralizing spores that pressure washing would simply spread around.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How often should I get my roof soft washed in Charleston, SC?",
+        answer: "Most Charleston homes benefit from roof soft washing every 2–3 years. Coastal properties near Folly Beach, Isle of Palms, or Sullivan's Island, and homes heavily shaded by trees, may need annual treatment due to faster biological regrowth. A visual inspection each spring is a good way to catch early algae growth before it becomes a major issue.",
+      },
+      {
+        question: "Will soft washing damage my roof shingles or void my warranty?",
+        answer: "No — soft washing is the manufacturer-approved method for cleaning asphalt shingle roofs and will not void your warranty. It uses low water pressure (similar to a garden hose) combined with professional cleaning solutions that do the work without mechanical force. Pressure washing, on the other hand, is known to void warranties and cause shingle damage.",
+      },
+      {
+        question: "Can I use bleach to clean algae off my roof myself?",
+        answer: "DIY bleach treatments are not recommended. Improper concentrations can damage shingles, kill surrounding landscaping, and irritate skin and eyes. Professional roof soft washing services use biodegradable, properly diluted solutions designed specifically for roof surfaces, applied safely from the ground or with fall protection — giving you better results with none of the risks.",
+      },
+    ],
+  },
 ];
 
 function BlogCard({ post, onRead }) {
@@ -285,6 +537,20 @@ function BlogPostView({ post, onBack }) {
             </div>
           ))}
         </div>
+
+        {post.faqs && post.faqs.length > 0 && (
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold text-primary mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              {post.faqs.map((faq, i) => (
+                <div key={i} className="border-l-4 border-secondary pl-5">
+                  <h3 className="font-bold text-foreground mb-2">{faq.question}</h3>
+                  <p className="text-foreground text-sm leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* CTA Box */}
         <div className="bg-primary rounded-2xl p-8 text-center mt-12">

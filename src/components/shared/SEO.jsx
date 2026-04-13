@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SITE_URL = 'https://soakdcharleston.com';
-const DEFAULT_IMAGE = `${SITE_URL}/logo.png`;
+const DEFAULT_IMAGE = 'https://media.base44.com/images/public/69bdabf65e992908c9993001/261096c4f_Soakdlogo2.jpg';
 
 export default function SEO({
   title,

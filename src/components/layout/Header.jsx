@@ -55,7 +55,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f9ff51873_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-14 w-auto object-contain" />
+              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/be4918f32_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-14 w-auto object-contain" />
             </Link>
 
             {/* Desktop nav */}

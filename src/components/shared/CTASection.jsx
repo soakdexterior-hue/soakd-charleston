@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export default function CTASection({
   title = "Ready for Crystal Clear Results?",
   subtitle = "Get your free quote today — we respond within 1 hour guaranteed!",
-  description = "Join over 70 satisfied homeowners across the Charleston area. Fast response, guaranteed results.",
+  description = "Join over 100 satisfied homeowners across the Charleston area. Fast response, guaranteed results.",
 }) {
   return (
     <section className="bg-primary relative overflow-hidden">

@@ -282,6 +282,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── SITEMAP ── */}
+      <section className="bg-white py-16 border-t border-black/10">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-bold text-[#0f1e3d] text-sm mb-4">Pages</h3>
+              <ul className="space-y-2">
+                <li><Link to="/" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Home</Link></li>
+                <li><Link to="/service-areas" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Service Areas</Link></li>
+                <li><Link to="/about" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">About</Link></li>
+                <li><Link to="/reviews" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Reviews</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-[#0f1e3d] text-sm mb-4">Services</h3>
+              <ul className="space-y-2">
+                <li><Link to="/window-cleaning" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Window Cleaning</Link></li>
+                <li><Link to="/pressure-washing" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Pressure Washing</Link></li>
+                <li><Link to="/soft-washing" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Soft Washing</Link></li>
+                <li><Link to="/gutter-cleaning" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Gutter Cleaning</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-[#0f1e3d] text-sm mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li><Link to="/blog" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Blog</Link></li>
+                <li><Link to="/faq" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">FAQ</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-[#0f1e3d] text-sm mb-4">Contact</h3>
+              <ul className="space-y-2">
+                <li><a href="tel:843-826-6708" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">843-826-6708</a></li>
+                <li><Link to="/contact" className="text-[#0f1e3d]/70 hover:text-[#0f1e3d] text-sm transition-colors">Get Quote</Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FINAL CTA ── */}
       <section className="bg-[#0f1e3d] py-20 border-t border-white/10">
         <div className="max-w-3xl mx-auto px-6 text-center">

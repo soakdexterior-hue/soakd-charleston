@@ -3,10 +3,16 @@ import { ArrowLeft, Phone, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import SEO from '../components/shared/SEO';
 
+// Image URLs
+const WATERFED_IMG = "https://media.base44.com/images/public/69bdabf65e992908c9993001/5c61a750a_waterfedpolepic.jpg";
+const SOAP_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/91ca4afcd_soappic.jpg";
+const TRUCK_IMG    = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
+
 const BLOG_POSTS = [
   {
     id: 1,
     slug: "how-often-clean-windows-charleston-sc",
+    image: WATERFED_IMG,
     title: "How Often Should You Clean Your Windows in Charleston SC?",
     date: "March 2026",
     category: "Window Cleaning",
@@ -46,6 +52,7 @@ const BLOG_POSTS = [
   {
     id: 2,
     slug: "pressure-washing-vs-soft-washing-charleston",
+    image: TRUCK_IMG,
     title: "Pressure Washing vs Soft Washing: What's Right for Your Lowcountry Home?",
     date: "March 2026",
     category: "Pressure Washing & Soft Washing",
@@ -85,6 +92,7 @@ const BLOG_POSTS = [
   {
     id: 3,
     slug: "clean-windows-before-selling-home-charleston",
+    image: SOAP_IMG,
     title: "5 Reasons Charleston Homeowners Should Clean Their Windows Before Selling",
     date: "March 2026",
     category: "Window Cleaning & Home Value",
@@ -117,6 +125,7 @@ const BLOG_POSTS = [
   {
     id: 4,
     slug: "gutter-cleaning-charleston-sc-why-it-matters",
+    image: WATERFED_IMG,
     title: "Why Gutter Cleaning in Charleston SC Is Critical for Your Home",
     date: "March 2026",
     category: "Gutter Cleaning",
@@ -156,6 +165,7 @@ const BLOG_POSTS = [
   {
     id: 5,
     slug: "best-window-cleaning-company-charleston-sc",
+    image: SOAP_IMG,
     title: "How to Choose the Best Window Cleaning Company in Charleston SC",
     date: "March 2026",
     category: "Window Cleaning Tips",
@@ -188,6 +198,7 @@ const BLOG_POSTS = [
   {
     id: 6,
     slug: "soft-washing-roof-charleston-sc",
+    image: TRUCK_IMG,
     title: "Soft Washing Your Roof in Charleston SC: What You Need to Know",
     date: "March 2026",
     category: "Soft Washing",
@@ -220,6 +231,7 @@ const BLOG_POSTS = [
   {
     id: 7,
     slug: "soft-wash-vs-pressure-wash-charleston-home",
+    image: WATERFED_IMG,
     title: "Soft Wash vs Pressure Wash: Which Is Right for Your Charleston Home?",
     date: "April 2026",
     category: "Soft Washing & Pressure Washing",
@@ -270,6 +282,7 @@ const BLOG_POSTS = [
   {
     id: 8,
     slug: "how-often-professional-window-cleaning",
+    image: SOAP_IMG,
     title: "How Often Should You Get Your Windows Professionally Cleaned? (And Why It Matters)",
     date: "April 2026",
     category: "Window Cleaning",
@@ -320,6 +333,7 @@ const BLOG_POSTS = [
   {
     id: 9,
     slug: "commercial-pressure-washing-charleston-business",
+    image: TRUCK_IMG,
     title: "Why Your Charleston Business Needs Regular Commercial Pressure Washing",
     date: "April 2026",
     category: "Commercial Cleaning",
@@ -362,6 +376,7 @@ const BLOG_POSTS = [
   {
     id: 10,
     slug: "pressure-washing-home-exterior-charleston-sc-guide",
+    image: WATERFED_IMG,
     title: "The Complete Guide to Pressure Washing Your Home's Exterior in Charleston, SC",
     date: "April 2026",
     category: "Pressure Washing",
@@ -430,6 +445,7 @@ const BLOG_POSTS = [
   {
     id: 11,
     slug: "black-streaks-roof-algae-removal-charleston",
+    image: SOAP_IMG,
     title: "Black Streaks on Your Roof? Here's What They Are and How to Remove Them Safely",
     date: "April 2026",
     category: "Roof Soft Washing",
@@ -474,6 +490,9 @@ const BLOG_POSTS = [
 function BlogCard({ post, onRead }) {
   return (
     <div className="bg-white rounded-2xl border shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      {post.image && (
+        <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+      )}
       <div className="border-t-4 border-secondary" />
       <div className="p-6 md:p-8">
         <span className="inline-block bg-secondary/10 text-primary text-xs font-bold px-3 py-1 rounded-full border border-secondary/30 mb-4">
@@ -503,6 +522,11 @@ function BlogPostView({ post, onBack }) {
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
       />
+      {post.image && (
+        <div className="w-full h-96 overflow-hidden bg-muted">
+          <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+        </div>
+      )}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         <button
           onClick={onBack}

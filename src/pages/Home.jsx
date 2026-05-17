@@ -15,6 +15,14 @@ const HOME_SCHEMA = {
 };
 
 const TRUCK_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
+
+const VIDEOS = [
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/736410095_AdClips-Clip14.mp4",
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/b3a6db30e_AdClips-Clip28.mp4",
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/a03a673f4_AdClips-Clip13.mp4",
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/f4cb50f1c_AdClips-Clip10.mp4",
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/192cd1d1a_AdClips-Clip2.mp4",
+];
 const TEAM_IMG      = "https://media.base44.com/images/public/69bdabf65e992908c9993001/0aa3f1106_Soakdteamwalking.jpg";
 const WATERFED_IMG  = "https://media.base44.com/images/public/69bdabf65e992908c9993001/5c61a750a_waterfedpolepic.jpg";
 const SOAP_IMG      = "https://media.base44.com/images/public/69bdabf65e992908c9993001/91ca4afcd_soappic.jpg";
@@ -162,6 +170,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── VIDEO STRIP 1 ── */}
+      <section className="bg-[#0a1628] py-10">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[VIDEOS[0], VIDEOS[1]].map((src, i) => (
+              <video key={i} src={src} autoPlay muted loop playsInline className="w-full rounded-2xl object-cover max-h-72" />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── ROTATING REVIEWS TICKER ── */}
       <section className="bg-[#0c1830] py-6 border-t border-white/10 overflow-hidden">
         <div className="relative">
@@ -211,6 +230,17 @@ export default function Home() {
               </Link>
             ))}
           </StaggerGrid>
+        </div>
+      </section>
+
+      {/* ── VIDEO STRIP 2 ── */}
+      <section className="bg-[#0c1830] py-10 border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[VIDEOS[2], VIDEOS[3], VIDEOS[4]].map((src, i) => (
+              <video key={i} src={src} autoPlay muted loop playsInline className="w-full rounded-2xl object-cover max-h-64" />
+            ))}
+          </div>
         </div>
       </section>
 

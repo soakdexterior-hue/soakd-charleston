@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { label: 'About', path: '/about' },
   { label: 'Reviews', path: '/reviews' },
   { label: 'Blog', path: '/blog' },
+  { label: 'FAQ', path: '/faq' },
   { label: 'Contact', path: '/contact' },
 ];
 

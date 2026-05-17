@@ -492,7 +492,7 @@ function BlogCard({ post, onRead }) {
   return (
     <div className="bg-white rounded-2xl border shadow-sm hover:shadow-md transition-shadow overflow-hidden">
       {post.image && (
-        <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+        <img src={post.image} alt={post.title} className="w-full h-48 object-contain bg-muted" />
       )}
       <div className="border-t-4 border-secondary" />
       <div className="p-6 md:p-8">
@@ -524,8 +524,8 @@ function BlogPostView({ post, onBack }) {
         canonical={`/blog/${post.slug}`}
       />
       {post.image && (
-        <div className="w-full h-96 overflow-hidden bg-muted">
-          <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+        <div className="w-full h-96 overflow-hidden bg-muted flex items-center justify-center">
+          <img src={post.image} alt={post.title} className="w-full h-full object-contain" />
         </div>
       )}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">

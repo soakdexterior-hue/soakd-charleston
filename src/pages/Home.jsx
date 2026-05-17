@@ -17,6 +17,7 @@ const HOME_SCHEMA = {
 const TRUCK_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
 
 const VIDEOS = [
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/da6af89a8_AdClips-Clip13.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/736410095_AdClips-Clip14.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/b3a6db30e_AdClips-Clip28.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/a03a673f4_AdClips-Clip13.mp4",
@@ -99,9 +100,9 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="relative bg-[#0f1e3d] overflow-hidden" style={{ minHeight: '100vh' }}>
-        {/* Background photo — team walking */}
+        {/* Background video */}
         <div className="absolute inset-0">
-          <img src={TEAM_IMG} alt="Soakd team" className="w-full h-full object-cover" style={{ opacity: 0.80, objectPosition: 'center center' }} />
+          <video src={VIDEOS[0]} autoPlay muted loop playsInline className="w-full h-full object-cover" style={{ opacity: 0.80 }} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(15,30,61,0.25) 0%, rgba(15,30,61,0.65) 65%, rgba(15,30,61,1) 100%)' }} />
         </div>
 

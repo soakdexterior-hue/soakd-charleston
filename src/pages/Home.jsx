@@ -150,18 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── VIDEO STRIP 1 ── */}
-      <section className="bg-[#0a1628] py-10">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[VIDEOS[0], VIDEOS[1]].map((src, i) => (
-              <video key={i} src={src} autoPlay muted loop playsInline className="w-full rounded-2xl object-cover max-h-72" />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── ROTATING REVIEWS TICKER ── */}
+{/* ── ROTATING REVIEWS TICKER ── */}
       <section className="bg-[#0c1830] py-6 border-t border-white/10 overflow-hidden">
         <div className="relative">
           <div className="absolute left-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to right, #0c1830, transparent)' }} />

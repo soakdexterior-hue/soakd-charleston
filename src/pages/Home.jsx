@@ -109,9 +109,9 @@ export default function Home() {
 
 
         {/* Hero content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24 flex items-center">
           {/* Left */}
-          <div>
+          <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
               <span className="w-2 h-2 bg-blue-400 rounded-full" />
               Serving Charleston &amp; Surrounding Areas
@@ -146,28 +146,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — services quick-list */}
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-            <p className="text-white/60 text-xs font-semibold tracking-widest uppercase mb-1">Our Services</p>
-            <p className="text-white/40 text-xs mb-5">Residential &amp; Commercial</p>
-            <div className="space-y-3">
-              {[
-                { name: 'Window Cleaning',  sub: 'Interior & exterior, streak-free',  badge: 'Most Popular', badgeClass: 'bg-yellow-400 text-[#0f1e3d]' },
-                { name: 'Pressure Washing', sub: 'Driveways, decks & siding',          badge: 'Available',    badgeClass: 'bg-green-500/20 text-green-300 border border-green-500/40' },
-                { name: 'Soft Washing',     sub: 'Roofs & delicate surfaces',          badge: 'Available',    badgeClass: 'bg-green-500/20 text-green-300 border border-green-500/40' },
-                { name: 'Gutter Cleaning',  sub: 'Full flush & inspection',            badge: 'Available',    badgeClass: 'bg-green-500/20 text-green-300 border border-green-500/40' },
-                { name: 'Commercial',       sub: 'Storefronts & offices',              badge: 'Commercial',   badgeClass: 'bg-blue-500/20 text-blue-300 border border-blue-500/40' },
-              ].map(s => (
-                <Link to="/contact" key={s.name} className="flex items-center justify-between bg-white/5 hover:bg-white/15 border border-white/15 rounded-xl px-4 py-3 transition-colors">
-                  <div>
-                    <p className="text-white font-semibold text-sm">{s.name}</p>
-                    <p className="text-white/45 text-xs">{s.sub}</p>
-                  </div>
-                  <span className={`text-xs font-bold px-3 py-1 rounded-full ${s.badgeClass}`}>{s.badge}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
+
         </div>
       </section>
 

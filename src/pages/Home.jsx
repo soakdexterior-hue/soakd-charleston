@@ -17,7 +17,7 @@ const HOME_SCHEMA = {
 const TRUCK_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
 
 const VIDEOS = [
-  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/da6af89a8_AdClips-Clip13.mp4",
+  "https://media.base44.com/videos/public/69bdabf65e992908c9993001/0d47be3ae_soakdadinstavid.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/736410095_AdClips-Clip14.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/b3a6db30e_AdClips-Clip28.mp4",
   "https://media.base44.com/videos/public/69bdabf65e992908c9993001/a03a673f4_AdClips-Clip13.mp4",
@@ -117,10 +117,10 @@ export default function Home() {
               Serving Charleston &amp; Surrounding Areas
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-[1.05] mb-4">
-              Spotless<br />Windows.<br /><span className="text-blue-400">Every Time.</span>
+              Exterior<br />Cleaning.<br /><span className="text-blue-400">Done Premium.</span>
             </h1>
             <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8 max-w-md">
-              Professional window cleaning, pressure washing &amp; soft washing for homes and businesses. Fast, reliable, guaranteed.
+              The team behind Charleston's most iconic homes, restaurants, and more. <span className="font-extrabold">Exterior Done Premium.</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <Link to="/contact">

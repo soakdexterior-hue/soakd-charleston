@@ -1,0 +1,43 @@
+{
+  "name": "ServiceArea",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the city or community served"
+    },
+    "county": {
+      "type": "string",
+      "description": "County name (e.g. Charleston County)"
+    },
+    "zip_code": {
+      "type": "string",
+      "description": "Primary ZIP code for this service area"
+    },
+    "popular_service": {
+      "type": "string",
+      "enum": [
+        "Window Cleaning",
+        "Pressure Washing",
+        "Soft Washing",
+        "Gutter Cleaning"
+      ],
+      "description": "Most requested service in this area"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the area and any relevant cleaning notes (e.g. coastal salt exposure)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether this service area is currently active"
+    }
+  },
+  "required": [
+    "name",
+    "county",
+    "zip_code",
+    "popular_service"
+  ]
+}

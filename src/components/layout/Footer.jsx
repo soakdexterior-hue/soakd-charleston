@@ -61,6 +61,9 @@ export default function Footer() {
                 <li key={area} className="text-white/70 text-sm">{area}, SC</li>
               ))}
             </ul>
+            <Link to="/service-areas" className="inline-flex items-center gap-1 text-secondary hover:text-secondary/80 text-xs font-semibold mt-3 transition-colors">
+              View All Areas <ArrowUpRight className="w-3 h-3" />
+            </Link>
           </div>
 
           {/* Contact */}

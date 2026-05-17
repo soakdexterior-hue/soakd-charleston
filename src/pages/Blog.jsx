@@ -492,7 +492,7 @@ function BlogCard({ post, onRead }) {
   return (
     <div className="bg-white rounded-2xl border shadow-sm hover:shadow-md transition-shadow overflow-hidden">
       {post.image && (
-        <img src={post.image} alt={post.title} className="w-full h-48 object-contain bg-muted" />
+        <img src={post.image} alt={post.title} className="w-full h-48 object-cover bg-muted" />
       )}
       <div className="border-t-4 border-secondary" />
       <div className="p-6 md:p-8">

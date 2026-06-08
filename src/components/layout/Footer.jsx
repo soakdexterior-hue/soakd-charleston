@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/f9ff51873_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-16 w-auto object-contain rounded-xl" />
+              <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/e8ae08491_Soakdlogo2.jpg" alt="Soakd Window Cleaning" className="h-16 w-auto object-contain" />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-2">
               Proudly serving the Lowcountry one spotless window at a time 🪟

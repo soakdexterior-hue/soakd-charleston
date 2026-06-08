@@ -103,11 +103,13 @@ export default function Footer() {
             © 2026 Soakd Window Cleaning. All Rights Reserved.
           </p>
           <div className="flex items-center gap-6 text-white/50 text-sm">
-            <Link to="/about" className="hover:text-white/80 transition-colors">About</Link>
-            <Link to="/reviews" className="hover:text-white/80 transition-colors">Reviews</Link>
-            <Link to="/faq" className="hover:text-white/80 transition-colors">FAQ</Link>
-            <Link to="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
-          </div>
+             <Link to="/about" className="hover:text-white/80 transition-colors">About</Link>
+             <Link to="/reviews" className="hover:text-white/80 transition-colors">Reviews</Link>
+             <Link to="/faq" className="hover:text-white/80 transition-colors">FAQ</Link>
+             <Link to="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
+             <Link to="/legal#privacy-policy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
+             <Link to="/legal#terms-of-service" className="hover:text-white/80 transition-colors">Terms of Service</Link>
+           </div>
         </div>
       </div>
     </footer>

@@ -171,7 +171,7 @@ const BLOG_POSTS = [
     date: "March 2026",
     category: "Window Cleaning Tips",
     seoTitle: "Best Window Cleaning Company in Charleston SC | Soakd",
-    metaDescription: "Looking for the best window cleaning company in Charleston SC? Here's exactly what to look for — and why Soakd earns 5 stars from 70+ local homeowners. Call 843-826-6708.",
+    metaDescription: "Looking for the best window cleaning company in Charleston SC? Here's exactly what to look for — and why Soakd earns 5 stars from 150+ local homeowners. Call 843-826-6708.",
     intro: "Searching for a reliable window cleaning company in Charleston SC? With so many options, it can be hard to know who to trust with your home. Here's a straightforward guide to finding the right window cleaning professional — and the red flags to avoid.",
     sections: [
       {

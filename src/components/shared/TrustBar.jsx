@@ -2,7 +2,7 @@ import React from 'react';
 import { Star, Shield, Award, Heart } from 'lucide-react';
 
 const TRUST_ITEMS = [
-  { icon: Star, label: '70 Five-Star Reviews', color: 'text-yellow-500' },
+  { icon: Star, label: '150 Five-Star Reviews', color: 'text-yellow-500' },
   { icon: Shield, label: 'Licensed & Insured', color: 'text-secondary' },
   { icon: Award, label: 'Clean Window Guarantee', color: 'text-secondary' },
   { icon: Heart, label: 'Locally Owned', color: 'text-red-400' },

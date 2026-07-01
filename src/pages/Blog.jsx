@@ -46,7 +46,7 @@ const BLOG_POSTS = [
       },
       {
         heading: "Why Lowcountry Homeowners Choose Soakd Window Cleaning",
-        body: "We've built our reputation on three things: showing up fast, doing the job right, and standing behind our work with our Clean Window Guarantee. With 70+ five-star Google reviews and the fastest response time in Charleston, Soakd is the window cleaning company your neighbors trust in West Ashley, Mount Pleasant, James Island, and beyond.",
+        body: "We've built our reputation on three things: showing up fast, doing the job right, and standing behind our work with our Clean Window Guarantee. With 150+ five-star Google reviews and the fastest response time in Charleston, Soakd is the window cleaning company your neighbors trust in West Ashley, Mount Pleasant, James Island, and beyond.",
       },
     ],
   },
@@ -180,7 +180,7 @@ const BLOG_POSTS = [
       },
       {
         heading: "2. Check Google Reviews (Not Just Their Website)",
-        body: "Any company can put fake testimonials on their own site. Always check Google Reviews for honest, verified feedback from real customers. Soakd has 70+ five-star reviews from Charleston homeowners across West Ashley, Mount Pleasant, James Island, and more.",
+        body: "Any company can put fake testimonials on their own site. Always check Google Reviews for honest, verified feedback from real customers. Soakd has 150+ five-star reviews from Charleston homeowners across West Ashley, Mount Pleasant, James Island, and more.",
       },
       {
         heading: "3. Ask About Their Cleaning Method",

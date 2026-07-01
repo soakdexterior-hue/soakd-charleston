@@ -45,7 +45,7 @@ export default function About() {
                 We're not a big faceless corporation — we're your neighbors, and we treat every home like it's our own. Our Clean Window Guarantee means we don't leave until you're 100% happy. Period.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With 70+ five-star reviews and the fastest response time in the Lowcountry, our reputation speaks for itself — built one clean window, one sparkling driveway, and one happy homeowner at a time.
+                With 150+ five-star reviews and the fastest response time in the Lowcountry, our reputation speaks for itself — built one clean window, one sparkling driveway, and one happy homeowner at a time.
               </p>
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
@@ -58,7 +58,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
                   <Star className="w-5 h-5 text-secondary" />
-                  70+ Five-Star Reviews
+                  150+ Five-Star Reviews
                 </div>
               </div>
             </div>

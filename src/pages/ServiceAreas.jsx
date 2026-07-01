@@ -81,7 +81,7 @@ export default function ServiceAreas() {
               Guarantee: if you're not satisfied, we return and make it right at no extra charge.
             </p>
             <p className="text-foreground leading-relaxed mb-4">
-              With over 100 five-star Google reviews from verified Lowcountry homeowners, Soakd is one of the most
+              With over 150 five-star Google reviews from verified Lowcountry homeowners, Soakd is one of the most
               trusted exterior cleaning companies in the Charleston area. We are locally owned — not a franchise —
               which means every crew member is accountable to the community they serve. We carry full general
               liability insurance on every job, protecting your home and your investment.

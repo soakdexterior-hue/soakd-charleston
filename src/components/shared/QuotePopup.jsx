@@ -61,7 +61,7 @@ export default function QuotePopup() {
                 <p className="text-white/80 text-sm">
                   Serving all of Charleston &amp; the Lowcountry
                 </p>
-                <p className="text-yellow-400 text-sm mt-1">⭐⭐⭐⭐⭐ 150 Five-Star Reviews</p>
+                <p className="text-yellow-400 text-sm mt-1">⭐⭐⭐⭐⭐ 170+ Five-Star Reviews</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">

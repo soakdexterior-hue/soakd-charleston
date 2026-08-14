@@ -13,7 +13,7 @@ export default function ReviewBanner() {
     >
       <span className="text-yellow-400 text-base leading-none">★★★★★</span>
       <span className="text-xs font-semibold tracking-wide">
-        150 Five-Star Reviews — Click to Read What Our Customers Say
+        170+ Five-Star Reviews — Click to Read What Our Customers Say
       </span>
       <span className="text-secondary group-hover:text-white text-xs font-bold">→</span>
     </a>

@@ -11,7 +11,7 @@ const HOME_SCHEMA = {
   "telephone": "843-826-6708",
   "url": "https://soakdcharleston.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC", "addressCountry": "US" },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "150" }
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "170" }
 };
 
 const TRUCK_IMG     = "https://media.base44.com/images/public/69bdabf65e992908c9993001/3227f4cb6_Soakdtruck2.png";
@@ -46,7 +46,7 @@ const HOW_IT_WORKS = [
 
 const WHY_US = [
   { title: 'Fully Insured & Licensed', desc: 'Every job is fully covered. Your home is protected.' },
-  { title: '150+ Five-Star Reviews',    desc: 'Real Charleston homeowners. Real results.' },
+  { title: '170+ Five-Star Reviews',    desc: 'Real Charleston homeowners. Real results.' },
   { title: 'Transparent Pricing',      desc: 'No hidden fees. You know the price before we arrive.' },
   { title: 'Locally Owned',            desc: 'Your neighbors — not a franchise. We care about this community.' },
 ];
@@ -93,7 +93,7 @@ export default function Home() {
     <>
       <SEO
         title="Window Cleaning & Pressure Washing Charleston SC | Soakd"
-        description="Soakd Window Cleaning offers professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC. 150+ five-star reviews. Call 843-826-6708!"
+        description="Soakd Window Cleaning offers professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC. 170+ five-star reviews. Call 843-826-6708!"
         canonical="/"
         schema={HOME_SCHEMA}
       />
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
             {/* Stats */}
             <div className="flex gap-8">
-              {[['150+','5-Star Reviews'],['500+','Happy Customers'],['100%','Guaranteed']].map(([num, label]) => (
+              {[['170+','5-Star Reviews'],['500+','Happy Customers'],['100%','Guaranteed']].map(([num, label]) => (
                 <div key={label}>
                   <div className="text-3xl font-extrabold text-white">{num}</div>
                   <div className="text-white/50 text-xs mt-0.5">{label}</div>
@@ -276,7 +276,7 @@ export default function Home() {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-yellow-400 font-semibold text-sm hover:text-yellow-300 transition-colors"
             >
-              See all 150+ Google Reviews <ArrowRight className="w-4 h-4" />
+              See all 170+ Google Reviews <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>

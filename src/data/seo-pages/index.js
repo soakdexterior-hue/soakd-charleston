@@ -19,7 +19,7 @@
  *     path:            '/service-areas/charleston-county-sc/mount-pleasant',
  *     parentPath:      '/service-areas/charleston-county-sc',
  *     name:            'Mount Pleasant',        // hub card label
- *     cardImage:       '/images/areas/...jpg',  // hub card thumbnail (optional)
+ *     cardImage:       '/images/service-areas/{slug}.jpg',  // hub card thumbnail (optional)
  *     cardDescription: '...',                   // hub card subline (optional)
  *     geoPlacename:    'Mount Pleasant',        // optional
  *     serviceName:     'Window Cleaning',       // service pages only, for schema
@@ -36,17 +36,36 @@
  *
  * Do NOT add the `copy.hub` field by hand; SeoPage builds it from the registry.
  *
+ * IMAGE PATHS MIRROR PAGE URLS (Karan's rule): a page at
+ * /service-areas/charleston-county-sc uses /images/service-areas/charleston-county-sc.jpg,
+ * served from public/. Keeps assets findable and avoids a naming debate per batch.
+ *
  * Safe to import from Node build scripts — page modules must therefore stay free
  * of JSX and bundler asset imports (image paths are plain `/public` strings).
  */
 
+// July '26 batch
+import charlestonCounty from './charleston-county-sc.js';
+import beaufortCounty from './beaufort-county-sc.js';
+// August '26 batch
+import dorchesterCounty from './dorchester-county-sc.js';
+import berkeleyCounty from './berkeley-county-sc.js';
+import colletonCounty from './colleton-county-sc.js';
+
 // ─── Registered pages ────────────────────────────────────────────────────────
-// Add each new page module here. Empty today: every page is being built fresh
-// on the template, and the legacy flat pages are excluded by design.
+// Add each new page module here. The legacy flat service pages
+// (/window-cleaning etc.) are deliberately not registered — they are to be
+// rebuilt on the template. Entries flagged `draft: true` are routed and
+// reviewable but excluded from the sitemap and marked noindex.
 
 export const seoPages = [
-  // e.g. import charlestonCounty from './charleston-county-sc.js';
-  //      ...then list it here.
+  // July '26
+  charlestonCounty,
+  beaufortCounty,
+  // August '26
+  dorchesterCounty,
+  berkeleyCounty,
+  colletonCounty,
 ];
 
 // ─── Root hubs ───────────────────────────────────────────────────────────────
@@ -62,8 +81,13 @@ export const ROOT_HUBS = {
 
 export const pageByPath = (path) => seoPages.find((p) => p.path === path);
 
-/** Direct children of a path — this is what every card hub renders. */
-export const childrenOf = (path) => seoPages.filter((p) => p.parentPath === path);
+/**
+ * Direct children of a path — this is what every card hub renders.
+ * Drafts are excluded so a live hub never links to placeholder copy; the card
+ * appears the moment the `draft` flag is removed.
+ */
+export const childrenOf = (path) =>
+  seoPages.filter((p) => p.parentPath === path && !p.draft);
 
 /**
  * Breadcrumb trail from the site root down to `entry`, walking parentPath.

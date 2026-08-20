@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "npm run sitemap && vite build",
+    "validate": "node scripts/validate-seo-pages.mjs",
+    "build": "npm run validate && npm run sitemap && vite build",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",

@@ -43,11 +43,15 @@ const entries = [
 
   // Every SEO template page — county, city, location service, primary service.
   // Registry presence means the page exists, so nothing here can 404.
-  ...seoPages.map((p) => ({
-    path: p.path,
-    changefreq: 'monthly',
-    priority: p.type === 'county' ? '0.8' : '0.7',
-  })),
+  // Drafts are excluded: a page still carrying placeholder copy must never be
+  // submitted to Google. Remove `draft` from the entry once its copy is wired.
+  ...seoPages
+    .filter((p) => !p.draft)
+    .map((p) => ({
+      path: p.path,
+      changefreq: 'monthly',
+      priority: p.type === 'county' ? '0.8' : '0.7',
+    })),
 ];
 
 const seen = new Set();

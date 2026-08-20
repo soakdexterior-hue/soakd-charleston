@@ -20,10 +20,10 @@
  * IMAGES mirror page URLs (Karan's convention). Drop the file into `public/`
  * at the path matching its page and reference it with a leading slash:
  *
- *   county page  →  public/images/areas/charleston-county-sc.jpg
- *                   image: '/images/areas/charleston-county-sc.jpg'
- *   city page    →  public/images/areas/charleston-county-sc/mount-pleasant.jpg
- *                   image: '/images/areas/charleston-county-sc/mount-pleasant.jpg'
+ *   county page  →  public/images/service-areas/charleston-county-sc.jpg
+ *                   image: '/images/service-areas/charleston-county-sc.jpg'
+ *   city page    →  public/images/service-areas/charleston-county-sc/mount-pleasant.jpg
+ *                   image: '/images/service-areas/charleston-county-sc/mount-pleasant.jpg'
  *
  * Files in `public/` are served verbatim, so these stay plain strings — no
  * bundler import, and Node build scripts can still read this module. A hub card
@@ -36,6 +36,10 @@ export const counties = [
   { slug: 'charleston-county-sc', name: 'Charleston County', image: null },
   { slug: 'berkeley-county-sc', name: 'Berkeley County', image: null },
   { slug: 'dorchester-county-sc', name: 'Dorchester County', image: null },
+  // Added for the July/August '26 county batches. No community list yet — add
+  // cities here as their pages are commissioned.
+  { slug: 'beaufort-county-sc', name: 'Beaufort County', image: null },
+  { slug: 'colleton-county-sc', name: 'Colleton County', image: null },
 ];
 
 export const areas = [

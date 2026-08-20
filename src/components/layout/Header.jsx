@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { childrenOf } from "@/data/seo-pages";
 
+// Service Areas children come from the page registry, so the menu lists exactly
+// the county pages that exist — no hardcoded list to fall out of sync.
 const NAV_LINKS = [
   { label: 'Home', path: '/' },
   {
@@ -12,6 +15,12 @@ const NAV_LINKS = [
       { label: 'Pressure Washing', path: '/pressure-washing' },
       { label: 'Soft Washing', path: '/soft-washing' },
       { label: 'Gutter Cleaning', path: '/gutter-cleaning' },
+    ]
+  },
+  {
+    label: 'Service Areas', path: '/service-areas', children: [
+      { label: 'All Service Areas', path: '/service-areas' },
+      ...childrenOf('/service-areas').map((c) => ({ label: c.name, path: c.path })),
     ]
   },
   { label: 'About', path: '/about' },
@@ -24,7 +33,9 @@ const NAV_LINKS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  // Which mobile submenu is expanded, by label. A single boolean would toggle
+  // both dropdowns at once now that there is more than one.
+  const [openMenu, setOpenMenu] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -35,7 +46,7 @@ export default function Header() {
 
   useEffect(() => {
     setMobileOpen(false);
-    setServicesOpen(false);
+    setOpenMenu(null);
   }, [location]);
 
   return (
@@ -66,7 +77,7 @@ export default function Header() {
                 <div key={link.label} className="relative group">
                   {link.children ? (
                     <>
-                      <button className={`px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1 transition-colors hover:bg-muted ${location.pathname.includes('washing') || location.pathname.includes('cleaning') || location.pathname.includes('gutter') ? 'text-primary' : 'text-foreground'}`}>
+                      <button className={`px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-1 transition-colors hover:bg-muted ${link.children.some((c) => location.pathname === c.path) ? 'text-primary font-semibold' : 'text-foreground'}`}>
                         {link.label}
                         <ChevronDown className="w-3.5 h-3.5" />
                       </button>
@@ -127,13 +138,13 @@ export default function Header() {
                   {link.children ? (
                     <>
                       <button
-                        onClick={() => setServicesOpen(!servicesOpen)}
+                        onClick={() => setOpenMenu(openMenu === link.label ? null : link.label)}
                         className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium hover:bg-muted"
                       >
                         {link.label}
-                        <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`w-4 h-4 transition-transform ${openMenu === link.label ? 'rotate-180' : ''}`} />
                       </button>
-                      {servicesOpen && (
+                      {openMenu === link.label && (
                         <div className="pl-4 space-y-1">
                           {link.children.map((child) => (
                             <Link

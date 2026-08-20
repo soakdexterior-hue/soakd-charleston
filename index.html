@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Default title/meta — overridden per-page by react-helmet-async -->
+    <!-- Per-page title and description come from react-helmet-async (see
+         components/seo/SEOHead.jsx and components/shared/SEO.jsx).
+
+         Do NOT add a static <meta name="description"> here. Helmet APPENDS its
+         tag rather than replacing a pre-existing one, so a hardcoded fallback
+         produces two description tags on every page — and crawlers read the
+         first, meaning every page would serve this one instead of its own.
+         The title is safe: Helmet manages the single <title> element. -->
     <title>Charleston Window Cleaning &amp; Pressure Washing</title>
-    <meta name="description" content="Charleston Window Cleaning &amp; Pressure Washing" />
 
     <!-- Google Search Console verification -->
     <!-- Replace YOUR_VERIFICATION_CODE with the code from Google Search Console -->

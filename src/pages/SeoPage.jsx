@@ -89,7 +89,14 @@ export default function SeoPage({ entry }) {
         geoRegion={`US-${BUSINESS.state}`}
         geoPlacename={entry.geoPlacename ?? entry.name}
         jsonLd={buildSchema(entry)}
+        noindex={!!entry.draft}
       />
+      {entry.draft && (
+        <div className="bg-yellow-400 text-[#0f1e3d] text-center text-sm font-bold py-2 px-4">
+          ⚠️ Draft — placeholder copy. Noindexed and excluded from the sitemap and
+          hub cards until the copy is wired.
+        </div>
+      )}
       <SeoPageTemplate copy={copy} />
     </>
   );

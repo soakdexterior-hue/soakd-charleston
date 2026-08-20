@@ -34,6 +34,32 @@ export const IMAGES = {
   soap: `${CDN}/91ca4afcd_soappic.jpg`,
 };
 
+/**
+ * Window-cleaning action photography, 1200x900 (4:3) WebP, served from public/.
+ * Sized for the Benefits/Why split sections, which render a 4:3 crop.
+ *
+ * Keyed by what each photo actually SHOWS, not by where it is used — the
+ * Benefits/Why rule is that images must be unique across a batch AND relevant
+ * to the page's subject, so picking well means matching the photo to the copy.
+ * Residential vs commercial is called out because the county page copy is
+ * written for homeowners.
+ */
+export const WINDOW_CLEANING = {
+  // Residential
+  interiorSqueegee: '/images/window-cleaning/window-cleaning-01.webp', // interior, large picture window
+  waterFedPoleExterior: '/images/window-cleaning/window-cleaning-02.webp', // pole reaching upper storey
+  ladderSecondStorey: '/images/window-cleaning/window-cleaning-03.webp', // ladder work, upper window
+  slidingDoor: '/images/window-cleaning/window-cleaning-05.webp', // exterior sliding glass door
+  kitchenInterior: '/images/window-cleaning/window-cleaning-07.webp', // interior kitchen window
+  twoTechsExterior: '/images/window-cleaning/window-cleaning-09.webp', // two technicians, exterior
+  sunroom: '/images/window-cleaning/window-cleaning-10.webp', // sunroom / conservatory glass
+
+  // Commercial / urban
+  storefront: '/images/window-cleaning/window-cleaning-04.webp', // street-level storefront
+  officeInterior: '/images/window-cleaning/window-cleaning-06.webp', // office interior glazing
+  highRiseExterior: '/images/window-cleaning/window-cleaning-08.webp', // balcony, high-rise
+};
+
 export const VIDEOS = {
   heroAd: 'https://media.base44.com/videos/public/69bdabf65e992908c9993001/0d47be3ae_soakdadinstavid.mp4',
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Star, ArrowUpRight } from 'lucide-react';
 import { GOOGLE_BUSINESS } from '@/data/business';
+import { childrenOf } from '@/data/seo-pages';
 
 const SERVICES = [
   { label: 'Window Cleaning', path: '/window-cleaning' },
@@ -10,11 +11,8 @@ const SERVICES = [
   { label: 'Gutter Cleaning', path: '/gutter-cleaning' },
 ];
 
-const AREAS = [
-  'Charleston', 'Summerville', 'Goose Creek', 'Mount Pleasant',
-  'James Island', 'Daniel Island', 'Johns Island', 'Seabrook Island',
-  'Isle of Palms', 'Folly Beach', 'Sullivans Island'
-];
+// Counties come from the page registry, so the footer lists exactly the county
+// pages that exist and links to each. Adding a county page adds it here.
 
 export default function Footer() {
   return (
@@ -67,9 +65,17 @@ export default function Footer() {
           {/* Service Areas */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Service Areas</h3>
-            <ul className="space-y-2">
-              {AREAS.map((area) => (
-                <li key={area} className="text-white/70 text-sm">{area}, SC</li>
+            <ul className="space-y-3">
+              {childrenOf('/service-areas').map((county) => (
+                <li key={county.path}>
+                  <Link
+                    to={county.path}
+                    className="text-white/70 hover:text-secondary transition-colors text-sm flex items-center gap-1 group"
+                  >
+                    {county.name}, SC
+                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
+                </li>
               ))}
             </ul>
             <Link to="/service-areas" className="inline-flex items-center gap-1 text-secondary hover:text-secondary/80 text-xs font-semibold mt-3 transition-colors">

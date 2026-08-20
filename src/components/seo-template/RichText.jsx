@@ -16,7 +16,15 @@ import { SITE_URL } from '@/data/business';
  * `inline` renders without a wrapping <p>, for use inside an existing paragraph.
  */
 
-const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
+/**
+ * Matches either link syntax Karan's copy arrives in:
+ *   Markdown  [label](url)
+ *   HTML      <a href="url" ...>label</a>   (extra attributes are ignored)
+ *
+ * Group pairs: 1/2 = Markdown label/href, 3/4 = HTML href/label.
+ */
+const LINK_RE =
+  /\[([^\]]+)\]\(([^)]+)\)|<a\s+[^>]*href=["']([^"']+)["'][^>]*>(.*?)<\/a>/gi;
 
 const LINK_CLASS =
   'text-secondary font-semibold underline underline-offset-2 hover:no-underline';
@@ -33,7 +41,9 @@ function parse(text) {
 
   LINK_RE.lastIndex = 0;
   while ((match = LINK_RE.exec(text)) !== null) {
-    const [full, label, href] = match;
+    const [full, mdLabel, mdHref, htmlHref, htmlLabel] = match;
+    const label = mdLabel ?? htmlLabel;
+    const href = mdHref ?? htmlHref;
     if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
     parts.push(
       isInternal(href) ? (

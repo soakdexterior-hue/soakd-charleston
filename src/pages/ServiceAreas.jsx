@@ -1,33 +1,36 @@
 import React from 'react';
 import SEOHead, {
   localBusinessSchema,
-  areaServedSchema,
+  serviceSchema,
   breadcrumbSchema,
 } from '@/components/seo/SEOHead';
 import CardHub from '@/components/seo-template/CardHub';
 import CTASection from '@/components/shared/CTASection';
-import { areas } from '@/data/serviceAreas';
 import { childrenOf } from '@/data/seo-pages';
+import { areas } from '@/data/serviceAreas';
+import { BUSINESS } from '@/data/business';
 
 /**
- * `/service-areas` — the Top Level Service Area hub. Root of the areas tree.
+ * `/service-areas` — the Top Level Service Area page.
  *
- * The card hub IS the page (Karan's rule) — no hero, benefits, why, body copy,
- * map or CTA. With no hero, the hub heading carries the page's single H1.
+ * Card hub ONLY (Karan's rule) — no hero, benefits, why, FAQ or map sections.
+ * The hub heading carries the page's single H1, so `headingLevel={1}`.
  *
- * The hub's children are the COUNTY pages. None are built yet, so the cards
- * render unlinked; each becomes a link automatically when its `hasPage` flag
- * is flipped in src/data/serviceAreas.js.
+ * Cards are derived from the registry: every page whose parentPath is
+ * '/service-areas'. Counties appear here automatically as they are built.
+ *
+ * Copy is Karan's South Carolina page copy — meta, H1 and hero description
+ * (used as the hub subtext), minus the citation markers his source document
+ * carried. The internal home link is dropped here because the subtext sits on
+ * the home-linked hub page itself; see the note in the conversation.
  */
 export default function ServiceAreas() {
   const hub = {
     variant: 'location',
-    eyebrow: 'Where We Work',
-    heading: 'Soakd Service Areas in Charleston, SC',
+    eyebrow: 'Our Locations',
+    heading: 'Service Areas for Window Cleaning in South Carolina',
     subtext:
-      'Locally owned and based in Charleston, Soakd serves homeowners and businesses throughout the Lowcountry — from the beaches to the suburbs.',
-    // Cards come from the page registry — every registered page whose parent is
-    // this hub. Empty today; fills automatically as county pages are built.
+      'Soakd provides professional window cleaning in South Carolina for homeowners seeking clearer glass, cleaner frames, and a more polished exterior. Window cleaning can include interior and exterior glass along with screens, tracks, and sills.',
     items: childrenOf('/service-areas').map((child) => ({
       name: child.name,
       href: child.path,
@@ -39,14 +42,27 @@ export default function ServiceAreas() {
   return (
     <>
       <SEOHead
-        title="Service Areas | Window Cleaning & Pressure Washing Charleston SC | Soakd"
-        description="Soakd Window Cleaning serves all of Charleston SC and the Lowcountry — West Ashley, Mount Pleasant, James Island, Summerville, Goose Creek, Isle of Palms, and more. Call 843-826-6708."
+        title="Professional Window Cleaning in South Carolina | Soakd"
+        description="Soakd provides professional window cleaning in South Carolina with detailed service and flexible scheduling. Get cleaner, clearer windows. Call Now!"
         canonical="/service-areas"
         geoRegion="US-SC"
-        geoPlacename="Charleston"
+        geoPlacename="South Carolina"
         jsonLd={[
           localBusinessSchema,
-          areaServedSchema(areas.map((a) => a.name)),
+          serviceSchema(
+            'Window Cleaning',
+            'Professional residential window cleaning including interior and exterior glass, screens, tracks and sills.',
+            'South Carolina'
+          ),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'HomeAndConstructionBusiness',
+            '@id': 'https://soakdcharleston.com/#business',
+            name: BUSINESS.name,
+            url: 'https://soakdcharleston.com',
+            telephone: BUSINESS.telephone,
+            areaServed: areas.map((a) => ({ '@type': 'City', name: a.name })),
+          },
           breadcrumbSchema([
             { name: 'Home', url: '/' },
             { name: 'Service Areas', url: '/service-areas' },

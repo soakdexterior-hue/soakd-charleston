@@ -17,9 +17,13 @@ import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import Services from './pages/Services';
 import ServiceAreas from './pages/ServiceAreas';
 import FAQ from './pages/FAQ';
 import Legal from './pages/Legal';
+import TemplatePreview from './pages/TemplatePreview';
+import SeoPage from './pages/SeoPage';
+import { seoPages } from '@/data/seo-pages';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -54,9 +58,20 @@ const AuthenticatedApp = () => {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/service-areas" element={<ServiceAreas />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/legal" element={<Legal />} />
+
+        {/* SEO template pages — county, city, location service and primary
+            service — generated from the registry in src/data/seo-pages. Adding
+            a page there routes it automatically; no route is written by hand. */}
+        {seoPages.map((entry) => (
+          <Route key={entry.path} path={entry.path} element={<SeoPage entry={entry} />} />
+        ))}
+
+        {/* Internal harness for reviewing the SEO template — noindexed, not sitemapped. */}
+        <Route path="/template-preview" element={<TemplatePreview />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

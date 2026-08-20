@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: 'Home', path: '/' },
   {
     label: 'Services', path: '/services', children: [
+      { label: 'All Services', path: '/services' },
       { label: 'Window Cleaning', path: '/window-cleaning' },
       { label: 'Pressure Washing', path: '/pressure-washing' },
       { label: 'Soft Washing', path: '/soft-washing' },

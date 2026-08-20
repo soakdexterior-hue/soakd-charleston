@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, ArrowRight, Star, ShieldCheck, MapPin, CheckCircle, Sparkles, Zap, Award, Building2, CalendarCheck, Users, ThumbsUp } from 'lucide-react';
+import { Phone, ArrowRight, Star, ShieldCheck, CheckCircle, Sparkles, Zap, Award, Building2, CalendarCheck, Users, ThumbsUp } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import SEO from '../components/shared/SEO';
+import { GOOGLE_BUSINESS } from '@/data/business';
 
 const HOME_SCHEMA = {
   "@context": "https://schema.org",
@@ -92,8 +93,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Window Cleaning & Pressure Washing Charleston SC | Soakd"
-        description="Soakd Window Cleaning offers professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC. 170+ five-star reviews. Call 843-826-6708!"
+        title="Charleston Window Cleaning & Pressure Washing"
+        description="Charleston Window Cleaning & Pressure Washing"
         canonical="/"
         schema={HOME_SCHEMA}
       />
@@ -117,10 +118,10 @@ export default function Home() {
               Serving Charleston &amp; Surrounding Areas
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-[1.05] mb-4">
-              Exterior<br />Cleaning.<br /><span className="text-blue-400">Done Premium.</span>
+              Charleston Window Cleaning &amp; Pressure Washing
             </h1>
-            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8 max-w-md">
-              The team behind Charleston's most iconic homes, restaurants, and more. <span className="font-extrabold">Exterior Done Premium.</span>
+            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
+              Professional window cleaning, soft washing &amp; pressure washing for homes across the Lowcountry.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <Link to="/contact">
@@ -272,7 +273,7 @@ export default function Home() {
           </StaggerGrid>
           <div className="text-center mt-8">
             <a
-              href="https://www.google.com/search?q=soakd+exterior#mpd=~16744916890549171315/customers/reviews"
+              href={GOOGLE_BUSINESS.profileUrl}
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-yellow-400 font-semibold text-sm hover:text-yellow-300 transition-colors"
             >

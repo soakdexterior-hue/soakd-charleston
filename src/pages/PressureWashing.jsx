@@ -102,6 +102,8 @@ export default function PressureWashing() {
             <span className="text-border">•</span>
             <Link to="/soft-washing" className="text-secondary hover:underline font-medium text-sm">Soft Washing</Link>
             <span className="text-border">•</span>
+            <Link to="/roof-washing" className="text-secondary hover:underline font-medium text-sm">Roof Washing</Link>
+            <span className="text-border">•</span>
             <Link to="/gutter-cleaning" className="text-secondary hover:underline font-medium text-sm">Gutter Cleaning</Link>
             <span className="text-border">•</span>
             <Link to="/about" className="text-secondary hover:underline font-medium text-sm">About Us</Link>

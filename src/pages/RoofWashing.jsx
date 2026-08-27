@@ -4,36 +4,37 @@ import { CheckCircle, Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import CTASection from '../components/shared/CTASection';
 import SEO from '../components/shared/SEO';
+import { IMAGES } from '@/data/media';
 
 const IDEAL_FOR = [
-  'Vinyl and wood siding',
-  'Stucco and EIFS systems',
-  'Roof shingles and tiles',
-  'Painted surfaces and trim',
-  'Screened-in porches and enclosures',
-  'Historic Charleston homes',
+  'Asphalt shingle roofs',
+  'Tile and metal roofs',
+  'Homes with black streak stains',
+  'Roofs near heavy tree cover',
+  'Coastal properties with salt exposure',
+  'Roofs showing algae or moss growth',
 ];
 
-export default function SoftWashing() {
+export default function RoofWashing() {
   return (
     <>
       <SEO
-        title="Soft Washing Services Charleston SC | Soakd"
-        description="Safe soft washing services in Charleston SC. Gentle on your home, tough on dirt. Serving the Lowcountry. Call 843-826-6708."
-        canonical="/soft-washing"
+        title="Roof Washing Services Charleston SC | Soakd"
+        description="Professional roof washing in Charleston SC. Safe low-pressure soft washing removes algae, black streaks, and moss without damaging shingles or voiding your warranty. Call 843-826-6708."
+        canonical="/roof-washing"
       />
       <section className="relative overflow-hidden bg-primary">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png" alt="Professional soft washing service on a Charleston SC home" className="w-full h-full object-cover" />
+          <img src={IMAGES.roofWashing} alt="Professional roof washing service on a Charleston SC home" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
           <span className="text-secondary font-semibold text-sm tracking-widest uppercase">Our Services</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
-            Soft Washing Services in Charleston, SC
+            Roof Washing Services in Charleston, SC
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-            A gentle, low-pressure cleaning method that safely removes algae, mold, mildew, and bacteria from your home's exterior without risking damage to delicate surfaces.
+            Safe, low-pressure roof washing that removes algae, black streaks, and moss — restoring your roof's appearance and extending its lifespan without voiding your warranty.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:843-826-6708">
@@ -54,13 +55,13 @@ export default function SoftWashing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">What Is Soft Washing?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">What Is Roof Washing?</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Soft washing uses low-pressure water combined with specialized biodegradable cleaning solutions to safely remove organic growth like algae, mold, mildew, and bacteria from your home's exterior surfaces. Unlike traditional pressure washing, soft washing won't damage paint, siding, shingles, or delicate architectural details.
+                Roof washing is a specialized soft washing process that safely removes algae, mold, mildew, and bacteria from your roof's surface. Using low-pressure water combined with professional-grade biodegradable cleaning solutions, we eliminate the organisms that cause those unsightly black streaks — without the high pressure that can damage shingles and void your roof warranty.
               </p>
-              <h3 className="text-xl font-bold text-foreground mb-4">Why Soft Washing Is Better for Charleston Homes</h3>
+              <h3 className="text-xl font-bold text-foreground mb-4">What Causes Those Black Streaks?</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Charleston's warm, humid climate creates an ideal breeding ground for mold, algae, and bacteria on your home's surfaces. High-pressure washing can force water behind siding, damage paint, and even crack delicate materials common in Lowcountry architecture. Soft washing is the safer, more effective choice — it kills organic growth at its source so your home stays cleaner longer.
+                The dark streaks on your roof are caused by <strong>Gloeocapsa magma</strong>, a type of algae that thrives in warm, humid climates like Charleston's. It feeds on the limestone filler in asphalt shingles, causing discoloration and premature aging. Left untreated, it can shorten your roof's lifespan by years. Our soft washing process kills this algae at the root, keeping your roof cleaner for up to 2–3 years.
               </p>
               <h3 className="text-xl font-bold text-foreground mb-4">Ideal For</h3>
               <ul className="space-y-3">
@@ -74,7 +75,7 @@ export default function SoftWashing() {
             </div>
             <div className="space-y-6">
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://media.base44.com/images/public/69bdabf65e992908c9993001/ae57edefc_generated_17952509.png" alt="Soft washing removing algae and mildew from a Charleston SC home exterior" className="w-full" />
+                <img src={IMAGES.roofWashing} alt="Roof washing removing black algae streaks from a Charleston SC roof" className="w-full" />
               </div>
               <div className="bg-white rounded-2xl p-8 border shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
@@ -82,12 +83,12 @@ export default function SoftWashing() {
                     <ShieldCheck className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground">Safe for Your Home</h3>
-                    <p className="text-sm text-muted-foreground">No damage, just results</p>
+                    <h3 className="font-bold text-foreground">Warranty-Safe Cleaning</h3>
+                    <p className="text-sm text-muted-foreground">No pressure, no damage</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Our soft washing technique uses 1/3 the pressure of a garden hose while delivering a deeper, longer-lasting clean. The specialized solutions we use are biodegradable and safe for your landscaping, pets, and family. Whether you're in Isle of Palms, Daniel Island, or Summerville, we protect your home while giving it a brand-new look.
+                  High-pressure washing strips the protective granules from asphalt shingles, voiding your manufacturer warranty and dramatically shortening your roof's life. Our low-pressure soft washing is the only manufacturer-approved method — it's safe for all roof types and backed by our satisfaction guarantee. Whether you're in Mount Pleasant, James Island, or Summerville, we'll protect your investment.
                 </p>
               </div>
             </div>
@@ -103,9 +104,9 @@ export default function SoftWashing() {
             <span className="text-border">•</span>
             <Link to="/pressure-washing" className="text-secondary hover:underline font-medium text-sm">Pressure Washing</Link>
             <span className="text-border">•</span>
-            <Link to="/gutter-cleaning" className="text-secondary hover:underline font-medium text-sm">Gutter Cleaning</Link>
+            <Link to="/soft-washing" className="text-secondary hover:underline font-medium text-sm">Soft Washing</Link>
             <span className="text-border">•</span>
-            <Link to="/roof-washing" className="text-secondary hover:underline font-medium text-sm">Roof Washing</Link>
+            <Link to="/gutter-cleaning" className="text-secondary hover:underline font-medium text-sm">Gutter Cleaning</Link>
             <span className="text-border">•</span>
             <Link to="/contact" className="text-secondary hover:underline font-medium text-sm">Get a Quote</Link>
           </div>

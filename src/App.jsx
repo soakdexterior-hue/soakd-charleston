@@ -13,6 +13,7 @@ import WindowCleaning from './pages/WindowCleaning';
 import PressureWashing from './pages/PressureWashing';
 import SoftWashing from './pages/SoftWashing';
 import GutterCleaning from './pages/GutterCleaning';
+import RoofWashing from './pages/RoofWashing';
 import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Contact from './pages/Contact';
@@ -55,6 +56,7 @@ const AuthenticatedApp = () => {
         <Route path="/pressure-washing" element={<PressureWashing />} />
         <Route path="/soft-washing" element={<SoftWashing />} />
         <Route path="/gutter-cleaning" element={<GutterCleaning />} />
+        <Route path="/roof-washing" element={<RoofWashing />} />
         <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />

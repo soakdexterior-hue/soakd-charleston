@@ -14,6 +14,7 @@ const NAV_LINKS = [
       { label: 'Window Cleaning', path: '/window-cleaning' },
       { label: 'Pressure Washing', path: '/pressure-washing' },
       { label: 'Soft Washing', path: '/soft-washing' },
+      { label: 'Roof Washing', path: '/roof-washing' },
       { label: 'Gutter Cleaning', path: '/gutter-cleaning' },
     ]
   },

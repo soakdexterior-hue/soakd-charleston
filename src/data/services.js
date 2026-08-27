@@ -62,6 +62,17 @@ export const services = [
     hasLegacyPage: true,
   },
   {
+    slug: 'roof-washing',
+    name: 'Roof Washing',
+    shortName: 'Roof Washing',
+    tagline: 'Safe low-pressure cleaning that removes algae and black streaks.',
+    description:
+      'Low-pressure roof washing that safely removes algae, black streaks, and moss from shingle and tile roofs without voiding your warranty.',
+    image: IMAGES.roofWashing,
+    cardImage: IMAGES.roofWashing,
+    hasLegacyPage: true,
+  },
+  {
     slug: 'gutter-cleaning',
     name: 'Gutter Cleaning',
     shortName: 'Gutters',

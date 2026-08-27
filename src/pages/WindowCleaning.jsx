@@ -119,6 +119,8 @@ export default function WindowCleaning() {
             <span className="text-border">•</span>
             <Link to="/soft-washing" className="text-secondary hover:underline font-medium text-sm">Soft Washing</Link>
             <span className="text-border">•</span>
+            <Link to="/roof-washing" className="text-secondary hover:underline font-medium text-sm">Roof Washing</Link>
+            <span className="text-border">•</span>
             <Link to="/gutter-cleaning" className="text-secondary hover:underline font-medium text-sm">Gutter Cleaning</Link>
             <span className="text-border">•</span>
             <Link to="/reviews" className="text-secondary hover:underline font-medium text-sm">Customer Reviews</Link>

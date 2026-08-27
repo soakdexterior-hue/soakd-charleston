@@ -1,0 +1,82 @@
+{
+  "name": "GscSnapshot",
+  "type": "object",
+  "properties": {
+    "snapshot_date": {
+      "type": "string",
+      "format": "date",
+      "description": "End date of the queried period (the sync date)"
+    },
+    "days_range": {
+      "type": "number",
+      "description": "Number of days of data queried (e.g. 28)"
+    },
+    "total_clicks": {
+      "type": "number",
+      "description": "Total clicks in the period"
+    },
+    "total_impressions": {
+      "type": "number",
+      "description": "Total impressions in the period"
+    },
+    "avg_ctr": {
+      "type": "number",
+      "description": "Average click-through rate as a percentage"
+    },
+    "avg_position": {
+      "type": "number",
+      "description": "Average position in Google search results"
+    },
+    "top_queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "clicks": {
+            "type": "number"
+          },
+          "impressions": {
+            "type": "number"
+          },
+          "ctr": {
+            "type": "number"
+          },
+          "position": {
+            "type": "number"
+          }
+        }
+      },
+      "description": "Top search queries driving traffic"
+    },
+    "top_pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "string"
+          },
+          "clicks": {
+            "type": "number"
+          },
+          "impressions": {
+            "type": "number"
+          },
+          "ctr": {
+            "type": "number"
+          },
+          "position": {
+            "type": "number"
+          }
+        }
+      },
+      "description": "Top pages receiving search traffic"
+    }
+  },
+  "required": [
+    "snapshot_date"
+  ]
+}

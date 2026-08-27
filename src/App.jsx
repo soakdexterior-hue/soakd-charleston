@@ -21,6 +21,7 @@ import Services from './pages/Services';
 import ServiceAreas from './pages/ServiceAreas';
 import FAQ from './pages/FAQ';
 import Legal from './pages/Legal';
+import SearchConsole from './pages/SearchConsole';
 import TemplatePreview from './pages/TemplatePreview';
 import SeoPage from './pages/SeoPage';
 import { seoPages } from '@/data/seo-pages';
@@ -62,6 +63,7 @@ const AuthenticatedApp = () => {
         <Route path="/service-areas" element={<ServiceAreas />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/legal" element={<Legal />} />
+        <Route path="/search-console" element={<SearchConsole />} />
 
         {/* SEO template pages — county, city, location service and primary
             service — generated from the registry in src/data/seo-pages. Adding

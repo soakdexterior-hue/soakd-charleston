@@ -1,0 +1,44 @@
+{
+  "description": "Pulls Google Search Console performance data (clicks, impressions, top queries, top pages) for soakdcharleston.com every Monday at 9am ET and stores a snapshot for the dashboard.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 9 * * 1",
+      "one_time_date": null,
+      "timezone": "America/New_York",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "name": "GSC Weekly Sync",
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "gsc_weekly_sync",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "sync_gsc": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "syncGscData"
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Sync GSC data",
+            "description": "Pull search performance from Search Console"
+          }
+        }
+      }
+    ]
+  }
+}

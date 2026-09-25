@@ -10,7 +10,7 @@ export default {
   type: 'county',
   path: '/service-areas/colleton-county-sc',
   parentPath: '/service-areas',
-  name: 'Colleton County',
+  name: 'Colleton County, SC',
   geoPlacename: 'Colleton County',
   // Image path mirrors the page URL.
   cardImage: '/images/service-areas/colleton-county-sc.jpg',

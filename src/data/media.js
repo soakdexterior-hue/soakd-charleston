@@ -53,11 +53,21 @@ export const WINDOW_CLEANING = {
   kitchenInterior: '/images/window-cleaning/window-cleaning-07.webp', // interior kitchen window
   twoTechsExterior: '/images/window-cleaning/window-cleaning-09.webp', // two technicians, exterior
   sunroom: '/images/window-cleaning/window-cleaning-10.webp', // sunroom / conservatory glass
+  squeegeeCloseUp: '/images/window-cleaning/window-cleaning-11.webp', // close-up, squeegee on wet glass
+  clothWipeSunset: '/images/window-cleaning/window-cleaning-12.webp', // interior, cloth wipe at sunset
+  poleStoneFrontHome: '/images/window-cleaning/window-cleaning-13.webp', // pole, stone-front house exterior
+  conservatorySqueegee: '/images/window-cleaning/window-cleaning-15.webp', // conservatory / glass room
+  ladderHomeExterior: '/images/window-cleaning/window-cleaning-16.webp', // ladder, upper window, house
+  livingRoomInterior: '/images/window-cleaning/window-cleaning-18.webp', // interior, living room window
+  patioSlidingDoor: '/images/window-cleaning/window-cleaning-19.webp', // exterior patio glass door
 
   // Commercial / urban
   storefront: '/images/window-cleaning/window-cleaning-04.webp', // street-level storefront
   officeInterior: '/images/window-cleaning/window-cleaning-06.webp', // office interior glazing
   highRiseExterior: '/images/window-cleaning/window-cleaning-08.webp', // balcony, high-rise
+  balconyCityView: '/images/window-cleaning/window-cleaning-14.webp', // balcony glass, city skyline
+  ropeAccessHighRise: '/images/window-cleaning/window-cleaning-17.webp', // rope access, high-rise
+  storefrontScrubber: '/images/window-cleaning/window-cleaning-20.webp', // street-level storefront
 };
 
 export const VIDEOS = {

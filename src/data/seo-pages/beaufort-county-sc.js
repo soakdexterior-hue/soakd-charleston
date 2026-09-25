@@ -10,7 +10,7 @@ export default {
   type: 'county',
   path: '/service-areas/beaufort-county-sc',
   parentPath: '/service-areas',
-  name: 'Beaufort County',
+  name: 'Beaufort County, SC',
   geoPlacename: 'Beaufort County',
   // Image path mirrors the page URL.
   cardImage: '/images/service-areas/beaufort-county-sc.jpg',

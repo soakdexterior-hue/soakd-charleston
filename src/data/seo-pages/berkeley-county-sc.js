@@ -10,7 +10,7 @@ export default {
   type: 'county',
   path: '/service-areas/berkeley-county-sc',
   parentPath: '/service-areas',
-  name: 'Berkeley County',
+  name: 'Berkeley County, SC',
   geoPlacename: 'Berkeley County',
   // Image path mirrors the page URL.
   cardImage: '/images/service-areas/berkeley-county-sc.jpg',

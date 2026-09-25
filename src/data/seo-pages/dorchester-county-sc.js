@@ -10,7 +10,7 @@ export default {
   type: 'county',
   path: '/service-areas/dorchester-county-sc',
   parentPath: '/service-areas',
-  name: 'Dorchester County',
+  name: 'Dorchester County, SC',
   geoPlacename: 'Dorchester County',
   // Image path mirrors the page URL.
   cardImage: '/images/service-areas/dorchester-county-sc.jpg',

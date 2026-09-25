@@ -12,7 +12,7 @@ export default {
   type: 'county',
   path: '/service-areas/charleston-county-sc',
   parentPath: '/service-areas',
-  name: 'Charleston County',
+  name: 'Charleston County, SC',
   geoPlacename: 'Charleston County',
   // Image path mirrors the page URL.
   cardImage: '/images/service-areas/charleston-county-sc.jpg',

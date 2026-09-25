@@ -51,6 +51,10 @@ import beaufortCounty from './beaufort-county-sc.js';
 import dorchesterCounty from './dorchester-county-sc.js';
 import berkeleyCounty from './berkeley-county-sc.js';
 import colletonCounty from './colleton-county-sc.js';
+// September '26 batch
+import charlestonCity from './charleston-county-sc/charleston.js';
+import mountPleasant from './charleston-county-sc/mount-pleasant.js';
+import jamesIsland from './charleston-county-sc/james-island.js';
 
 // ─── Registered pages ────────────────────────────────────────────────────────
 // Add each new page module here. The legacy flat service pages
@@ -66,6 +70,10 @@ export const seoPages = [
   dorchesterCounty,
   berkeleyCounty,
   colletonCounty,
+  // September '26
+  charlestonCity,
+  mountPleasant,
+  jamesIsland,
 ];
 
 // ─── Root hubs ───────────────────────────────────────────────────────────────

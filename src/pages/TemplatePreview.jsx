@@ -128,7 +128,7 @@ const SERVICE_SAMPLE = {
   map: {
     variant: 'gbp',
     subtext:
-      'Soakd is locally owned and based in Charleston, South Carolina. Find us on Google to read all 170+ verified five-star reviews from Lowcountry homeowners.',
+      'Soakd is locally owned and based in Charleston, South Carolina. Find us on Google to read all 200+ verified five-star reviews from Lowcountry homeowners.',
   },
 
   ctaHeadline: 'Ready for Crystal Clear Windows?',

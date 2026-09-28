@@ -20,7 +20,7 @@ export const BUSINESS = {
   state: 'SC',
   tagline: 'Exterior Done Premium',
   description:
-    'Professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston, SC and the Lowcountry. Fully insured, locally owned, 170+ five-star reviews.',
+    'Professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston, SC and the Lowcountry. Fully insured, locally owned, 200+ five-star reviews.',
   url: SITE_URL,
   logo: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/e8ae08491_Soakdlogo2.jpg',
 };
@@ -37,5 +37,5 @@ export const GOOGLE_BUSINESS = {
   profileUrl: 'https://www.google.com/maps?cid=16879828271710904270',
   embedUrl: 'https://www.google.com/maps?cid=16879828271710904270&output=embed',
   rating: 5.0,
-  reviewCount: 170, // as of August 2026 — bump when the listing moves
+  reviewCount: 200, // as of September 2026 — bump when the listing moves
 };

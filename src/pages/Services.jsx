@@ -38,7 +38,7 @@ export default function Services() {
     <>
       <SEOHead
         title="Exterior Cleaning Services in Charleston, SC | Soakd"
-        description="Window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC and the Lowcountry. Fully insured, 170+ five-star reviews. Call 843-826-6708."
+        description="Window cleaning, pressure washing, soft washing and gutter cleaning across Charleston SC and the Lowcountry. Fully insured, 200+ five-star reviews. Call 843-826-6708."
         canonical="/services"
         geoRegion="US-SC"
         geoPlacename="Charleston"

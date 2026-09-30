@@ -6,13 +6,8 @@ import { WINDOW_CLEANING } from '../../media.js';
  *
  * Copy is Karan's, verbatim. The external Johns Island link sits in the second
  * Benefits bullet; the internal home link sits in the third FAQ answer.
- *
- * DRAFT until a real Johns Island area photo arrives. Hero and hub card point
- * at johns-island.jpg, currently a stand-in copy of the county photo — replace
- * that file in place and remove `draft`.
  */
 export default {
-  draft: true,
   type: 'city',
   path: '/service-areas/charleston-county-sc/johns-island',
   parentPath: '/service-areas/charleston-county-sc',
@@ -31,7 +26,7 @@ export default {
       subtext:
         'Soakd provides comprehensive window cleaning in Johns Island, SC for homeowners who want clearer glass and cleaner window areas without adding another demanding task to property upkeep. Detailed service addresses interior and exterior windows along with screens, tracks, and sills, helping remove fingerprints, pollen, dust, and outdoor residue from multiple components around the home.',
       image: '/images/service-areas/charleston-county-sc/johns-island.jpg',
-      imageAlt: 'Johns Island, SC',
+      imageAlt: 'Aerial view of Johns Island, SC',
       formTitle: 'Get a Free Quote in Johns Island',
     },
 

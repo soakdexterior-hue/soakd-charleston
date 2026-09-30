@@ -23,6 +23,8 @@ export const BUSINESS = {
     'Professional window cleaning, pressure washing, soft washing and gutter cleaning across Charleston, SC and the Lowcountry. Fully insured, locally owned, 200+ five-star reviews.',
   url: SITE_URL,
   logo: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/e8ae08491_Soakdlogo2.jpg',
+  // Social share image: Base44's 1200x630 crop of the wide logo (house standard).
+  ogImage: 'https://media.base44.com/images/public/69bdabf65e992908c9993001/e35df7792_Soakdlogo1.jpg/v1/fill/w_1200,h_630/e35df7792_Soakdlogo1.jpg',
 };
 
 // Google Business Profile — listing name "SoakD Exterior".

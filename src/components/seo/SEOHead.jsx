@@ -15,7 +15,7 @@ export default function SEOHead({
   title,
   description,
   canonical,
-  ogImage = BUSINESS.logo,
+  ogImage = BUSINESS.ogImage,
   geoRegion,
   geoPlacename,
   jsonLd = [],

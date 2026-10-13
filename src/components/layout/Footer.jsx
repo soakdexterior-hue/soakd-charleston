@@ -73,7 +73,7 @@ export default function Footer() {
                     to={county.path}
                     className="text-white/70 hover:text-secondary transition-colors text-sm flex items-center gap-1 group"
                   >
-                    {county.name}, SC
+                    {county.name}
                     <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>

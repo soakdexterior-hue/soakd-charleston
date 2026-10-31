@@ -61,6 +61,14 @@ export const WINDOW_CLEANING = {
   livingRoomInterior: '/images/window-cleaning/window-cleaning-18.webp', // interior, living room window
   patioSlidingDoor: '/images/window-cleaning/window-cleaning-19.webp', // exterior patio glass door
 
+  // Coastal residential (November '26 batch — beach, marsh and island homes)
+  elevatedBeachHouseSqueegee: '/images/window-cleaning/window-cleaning-21.webp', // exterior squeegee, raised beach house, ocean
+  screenScrub: '/images/window-cleaning/window-cleaning-22.webp', // scrubbing a window screen, waterfront porch
+  sillTrackDetail: '/images/window-cleaning/window-cleaning-23.webp', // wiping sill, brushing track, marsh view
+  interiorMarshView: '/images/window-cleaning/window-cleaning-24.webp', // interior squeegee, window onto marsh
+  poleElevatedHome: '/images/window-cleaning/window-cleaning-25.webp', // water-fed pole, upper windows on a raised home
+  oceanfrontSlidingDoor: '/images/window-cleaning/window-cleaning-26.webp', // sliding glass door onto oceanfront deck
+
   // Commercial / urban
   storefront: '/images/window-cleaning/window-cleaning-04.webp', // street-level storefront
   officeInterior: '/images/window-cleaning/window-cleaning-06.webp', // office interior glazing

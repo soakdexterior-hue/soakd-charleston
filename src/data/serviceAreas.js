@@ -51,6 +51,7 @@ export const areas = [
   { slug: 'north-charleston', name: 'North Charleston', countySlug: 'charleston-county-sc', zip: '29405', popularService: 'Pressure Washing', image: null },
   { slug: 'isle-of-palms', name: 'Isle of Palms', countySlug: 'charleston-county-sc', zip: '29451', popularService: 'Window Cleaning', image: null },
   { slug: 'sullivans-island', name: "Sullivan's Island", countySlug: 'charleston-county-sc', zip: '29482', popularService: 'Soft Washing', image: null },
+  { slug: 'seabrook-island', name: 'Seabrook Island', countySlug: 'charleston-county-sc', zip: '29455', popularService: 'Window Cleaning', image: null },
   { slug: 'folly-beach', name: 'Folly Beach', countySlug: 'charleston-county-sc', zip: '29439', popularService: 'Window Cleaning', image: null },
   { slug: 'daniel-island', name: 'Daniel Island', countySlug: 'berkeley-county-sc', zip: '29492', popularService: 'Window Cleaning', image: null },
   { slug: 'goose-creek', name: 'Goose Creek', countySlug: 'berkeley-county-sc', zip: '29445', popularService: 'Soft Washing', image: null },

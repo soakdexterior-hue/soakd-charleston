@@ -59,6 +59,10 @@ import jamesIsland from './charleston-county-sc/james-island.js';
 import johnsIsland from './charleston-county-sc/johns-island.js';
 import follyBeach from './charleston-county-sc/folly-beach.js';
 import danielIsland from './berkeley-county-sc/daniel-island.js';
+// November '26 batch
+import sullivansIsland from './charleston-county-sc/sullivans-island.js';
+import isleOfPalms from './charleston-county-sc/isle-of-palms.js';
+import seabrookIsland from './charleston-county-sc/seabrook-island.js';
 
 // ─── Registered pages ────────────────────────────────────────────────────────
 // Add each new page module here. The legacy flat service pages
@@ -82,6 +86,10 @@ export const seoPages = [
   johnsIsland,
   follyBeach,
   danielIsland,
+  // November '26
+  sullivansIsland,
+  isleOfPalms,
+  seabrookIsland,
 ];
 
 // ─── Root hubs ───────────────────────────────────────────────────────────────

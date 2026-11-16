@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Heart, ShieldCheck, Clock, Star, Users, MapPin } from 'lucide-react';
 import CTASection from '../components/shared/CTASection';
 import SEO from '../components/shared/SEO';
+import MediaGallery from '../components/about/MediaGallery';
 
 const VALUES = [
   { icon: Clock, title: 'Fast Response', desc: 'We respond to every inquiry within an hour. Your time matters, and we don\'t keep you waiting.' },
@@ -73,6 +74,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <MediaGallery />
 
       {/* Values */}
       <section className="py-20 bg-white">
